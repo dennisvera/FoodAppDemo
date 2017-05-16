@@ -10,8 +10,6 @@ import UIKit
 
 class RecipesCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet var recipeTitleLabel: UILabel!
     @IBOutlet var dishImageView: UIImageView!
-    @IBOutlet var chefHeadshotImageView: UIImageView!
     
 }

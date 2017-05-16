@@ -15,9 +15,13 @@
 		E164B3091EC8CAF000EB20E4 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164B3081EC8CAF000EB20E4 /* CollectionHeaderView.swift */; };
 		E164B30F1EC94C2C00EB20E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E164B30E1EC94C2C00EB20E4 /* Assets.xcassets */; };
 		E164B3111ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164B3101ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift */; };
+		EB74D513670D7A1D11628126 /* Pods_FoodDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3576B1550FEA45E7CFE5DC9 /* Pods_FoodDemoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		037853767A7701A63AD27DFB /* Pods-FoodDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDemoApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodDemoApp/Pods-FoodDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		A3576B1550FEA45E7CFE5DC9 /* Pods_FoodDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A65C05EBBC35E5F13DB716 /* Pods-FoodDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodDemoApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodDemoApp/Pods-FoodDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E164B2EE1EC8BA6000EB20E4 /* FoodDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E164B2F11EC8BA6000EB20E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E164B2F31EC8BA6000EB20E4 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB74D513670D7A1D11628126 /* Pods_FoodDemoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D56DEB9B99E33FDABD0880B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5A65C05EBBC35E5F13DB716 /* Pods-FoodDemoApp.debug.xcconfig */,
+				037853767A7701A63AD27DFB /* Pods-FoodDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4B868B829F30B84AB5FE3657 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3576B1550FEA45E7CFE5DC9 /* Pods_FoodDemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E164B2E51EC8BA6000EB20E4 = {
 			isa = PBXGroup;
 			children = (
 				E164B2F01EC8BA6000EB20E4 /* FoodDemoApp */,
 				E164B2EF1EC8BA6000EB20E4 /* Products */,
+				2D56DEB9B99E33FDABD0880B /* Pods */,
+				4B868B829F30B84AB5FE3657 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,9 +128,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E164B3001EC8BA6000EB20E4 /* Build configuration list for PBXNativeTarget "FoodDemoApp" */;
 			buildPhases = (
+				12EED556CF599AC276C88C47 /* [CP] Check Pods Manifest.lock */,
 				E164B2EA1EC8BA6000EB20E4 /* Sources */,
 				E164B2EB1EC8BA6000EB20E4 /* Frameworks */,
 				E164B2EC1EC8BA6000EB20E4 /* Resources */,
+				D6E67E0314798382295F0305 /* [CP] Embed Pods Frameworks */,
+				E8C942FB851FD4C4D89BAA08 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,7 +156,7 @@
 				TargetAttributes = {
 					E164B2ED1EC8BA6000EB20E4 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = K24N6NL7FA;
+						DevelopmentTeam = B426D3XC5Q;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -164,6 +191,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12EED556CF599AC276C88C47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E67E0314798382295F0305 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodDemoApp/Pods-FoodDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8C942FB851FD4C4D89BAA08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodDemoApp/Pods-FoodDemoApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E164B2EA1EC8BA6000EB20E4 /* Sources */ = {
@@ -295,10 +370,12 @@
 		};
 		E164B3011EC8BA6000EB20E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A65C05EBBC35E5F13DB716 /* Pods-FoodDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K24N6NL7FA;
+				DEVELOPMENT_TEAM = B426D3XC5Q;
 				INFOPLIST_FILE = FoodDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dennisv.FoodDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,10 +385,12 @@
 		};
 		E164B3021EC8BA6000EB20E4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 037853767A7701A63AD27DFB /* Pods-FoodDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K24N6NL7FA;
+				DEVELOPMENT_TEAM = B426D3XC5Q;
 				INFOPLIST_FILE = FoodDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dennisv.FoodDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";

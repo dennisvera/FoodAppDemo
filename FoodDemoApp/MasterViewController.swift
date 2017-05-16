@@ -51,8 +51,8 @@ extension MasterViewController {
           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as! RecipesCollectionViewCell
         
         // Configure the cell
-        cell.recipeTitleLabel.text = "Ceviche Mixto"
-        cell.dishImageView.image = foodImageArray[indexPath.row]
+//        cell.recipeTitleLabel.text = "Ceviche Mixto"
+        cell.dishImageView.image = UIImage(named: "ceviche2")
         
         return cell
     }
