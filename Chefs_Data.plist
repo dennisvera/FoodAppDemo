@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Aaron Sanches</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Alex Guarnaschelli</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Alton Brown</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Amanda Freitag</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Anne Burell</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Bobby Flay</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Damaris Phillips</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Eddie Jackson</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Geoffrey Zakarian</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Guy Fiery</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Ina Garten</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Jeff Mauro</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Katie Lee</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
+</array>
+</plist>

@@ -14,19 +14,14 @@ class ChefsCollectionViewCell: UICollectionViewCell {
     
     var chef: Chefs? {
         didSet {
+            chefHeadshotImage.layer.cornerRadius = chefHeadshotImage.frame.size.width/2
+            chefHeadshotImage.clipsToBounds = true
+            
             if let theChef = chef {
                 chefHeadshotImage.image = UIImage(named: theChef.name)
                 chefNameLabel.text = theChef.name
             }
         }
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        
-        self.layer.cornerRadius = self.frame.size.width * 0.125
-        self.layer.borderWidth = 0.5
-        self.layer.borderColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1.0).cgColor
     }
     
     override func prepareForReuse() {

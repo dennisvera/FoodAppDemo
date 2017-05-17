@@ -15,11 +15,10 @@
 		E164B3091EC8CAF000EB20E4 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164B3081EC8CAF000EB20E4 /* CollectionHeaderView.swift */; };
 		E164B30F1EC94C2C00EB20E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E164B30E1EC94C2C00EB20E4 /* Assets.xcassets */; };
 		E164B3111ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164B3101ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift */; };
-		E1D35D141ECCA0D600F64106 /* Chefs_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1D35D131ECCA0D600F64106 /* Chefs_Data.plist */; };
 		E1D35D181ECCA58900F64106 /* Chefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D171ECCA58900F64106 /* Chefs.swift */; };
 		E1D35D1A1ECCA77000F64106 /* ChefsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D191ECCA77000F64106 /* ChefsCollectionViewController.swift */; };
-		E1D35D1E1ECCA81C00F64106 /* ChefsCustomViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D1D1ECCA81C00F64106 /* ChefsCustomViewLayout.swift */; };
 		E1D35D201ECCAB6800F64106 /* ChefsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D1F1ECCAB6800F64106 /* ChefsCollectionViewCell.swift */; };
+		E1D35D221ECCEEF300F64106 /* Chefs_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1D35D211ECCEEF300F64106 /* Chefs_Data.plist */; };
 		EB74D513670D7A1D11628126 /* Pods_FoodDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3576B1550FEA45E7CFE5DC9 /* Pods_FoodDemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,11 +36,10 @@
 		E164B3081EC8CAF000EB20E4 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		E164B30E1EC94C2C00EB20E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E164B3101ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesCollectionViewCell.swift; sourceTree = "<group>"; };
-		E1D35D131ECCA0D600F64106 /* Chefs_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Chefs_Data.plist; path = ../../Desktop/Chefs_Data.plist; sourceTree = "<group>"; };
 		E1D35D171ECCA58900F64106 /* Chefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chefs.swift; sourceTree = "<group>"; };
 		E1D35D191ECCA77000F64106 /* ChefsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefsCollectionViewController.swift; sourceTree = "<group>"; };
-		E1D35D1D1ECCA81C00F64106 /* ChefsCustomViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefsCustomViewLayout.swift; sourceTree = "<group>"; };
 		E1D35D1F1ECCAB6800F64106 /* ChefsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefsCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1D35D211ECCEEF300F64106 /* Chefs_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Chefs_Data.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				E164B3061EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift */,
-				E1D35D1D1ECCA81C00F64106 /* ChefsCustomViewLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -138,8 +135,8 @@
 		E1D35D121ECCA0BF00F64106 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E1D35D211ECCEEF300F64106 /* Chefs_Data.plist */,
 				E1D35D171ECCA58900F64106 /* Chefs.swift */,
-				E1D35D131ECCA0D600F64106 /* Chefs_Data.plist */,
 			);
 			name = Data;
 			path = ..;
@@ -208,7 +205,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1D35D141ECCA0D600F64106 /* Chefs_Data.plist in Resources */,
+				E1D35D221ECCEEF300F64106 /* Chefs_Data.plist in Resources */,
 				E164B2FC1EC8BA6000EB20E4 /* LaunchScreen.storyboard in Resources */,
 				E164B30F1EC94C2C00EB20E4 /* Assets.xcassets in Resources */,
 				E164B2F71EC8BA6000EB20E4 /* Main.storyboard in Resources */,
@@ -274,7 +271,6 @@
 				E164B3111ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift in Sources */,
 				E1D35D201ECCAB6800F64106 /* ChefsCollectionViewCell.swift in Sources */,
 				E164B3071EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift in Sources */,
-				E1D35D1E1ECCA81C00F64106 /* ChefsCustomViewLayout.swift in Sources */,
 				E164B3091EC8CAF000EB20E4 /* CollectionHeaderView.swift in Sources */,
 				E164B2F41EC8BA6000EB20E4 /* MasterViewController.swift in Sources */,
 				E164B2F21EC8BA6000EB20E4 /* AppDelegate.swift in Sources */,
