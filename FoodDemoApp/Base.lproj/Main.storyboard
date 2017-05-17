@@ -35,25 +35,64 @@
         <!--Chefs-->
         <scene sceneID="KjL-Z4-UJb">
             <objects>
-                <collectionViewController id="KZt-Kt-AwK" sceneMemberID="viewController">
+                <collectionViewController id="KZt-Kt-AwK" customClass="ChefsCollectionViewController" customModule="FoodDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="wEv-2U-elt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.1819814891" green="0.69426733259999995" blue="0.53024792669999998" alpha="0.5" colorSpace="calibratedRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ouc-ap-wvk">
-                            <size key="itemSize" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ouc-ap-wvk" customClass="ChefsCustomViewLayout" customModule="FoodDemoApp" customModuleProvider="target">
+                            <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="9Sc-al-cTs">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefCell" id="9Sc-al-cTs" customClass="ChefsCollectionViewCell" customModule="FoodDemoApp" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYr-5R-OLD">
+                                            <rect key="frame" x="-0.5" y="0.0" width="200" height="200"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gzp-IW-Qih" userLabel="chefHeadshot">
+                                                    <rect key="frame" x="40" y="20" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="120" id="2tP-SF-zeH"/>
+                                                        <constraint firstAttribute="height" constant="120" id="gHP-17-Ze2"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="gzp-IW-Qih" firstAttribute="leading" secondItem="zYr-5R-OLD" secondAttribute="leading" constant="40" id="0Lj-O3-fTF"/>
+                                                <constraint firstItem="gzp-IW-Qih" firstAttribute="top" secondItem="zYr-5R-OLD" secondAttribute="top" constant="20" id="AM0-Rm-Lpb"/>
+                                                <constraint firstAttribute="trailing" secondItem="gzp-IW-Qih" secondAttribute="trailing" constant="40" id="JMD-Ld-ZJV"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chefs Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNm-f1-r92" userLabel="chefName">
+                                            <rect key="frame" x="20" y="160" width="160" height="19"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zYr-5R-OLD" secondAttribute="bottom" id="KUt-3a-nls"/>
+                                    <constraint firstAttribute="trailing" secondItem="VNm-f1-r92" secondAttribute="trailing" constant="20" id="MUP-d7-hvL"/>
+                                    <constraint firstItem="VNm-f1-r92" firstAttribute="top" secondItem="gzp-IW-Qih" secondAttribute="bottom" constant="20" id="cAe-oq-iE7"/>
+                                    <constraint firstItem="VNm-f1-r92" firstAttribute="leading" secondItem="9Sc-al-cTs" secondAttribute="leading" constant="20" id="gXW-gP-g6C"/>
+                                    <constraint firstItem="zYr-5R-OLD" firstAttribute="leading" secondItem="9Sc-al-cTs" secondAttribute="leading" id="hCt-wn-AFs"/>
+                                    <constraint firstAttribute="trailing" secondItem="zYr-5R-OLD" secondAttribute="trailing" id="mf3-LM-Fw8"/>
+                                    <constraint firstItem="zYr-5R-OLD" firstAttribute="top" secondItem="9Sc-al-cTs" secondAttribute="top" id="tK9-bQ-erC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="chefHeadshotImage" destination="gzp-IW-Qih" id="w5s-Kd-fJI"/>
+                                    <outlet property="chefNameLabel" destination="VNm-f1-r92" id="DMg-vy-r5F"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -65,7 +104,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdV-NG-fbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2057" y="711"/>
+            <point key="canvasLocation" x="2056.8000000000002" y="710.19490254872574"/>
         </scene>
         <!--Search-->
         <scene sceneID="CzZ-0B-sU1">
