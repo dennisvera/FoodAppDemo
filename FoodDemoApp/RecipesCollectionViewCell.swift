@@ -11,5 +11,6 @@ import UIKit
 class RecipesCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var dishImageView: UIImageView!
+    @IBOutlet var recipeTitleLabel: UILabel!
     
 }
