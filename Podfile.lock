@@ -1,12 +1,15 @@
 PODS:
   - PageMenu (2.0.0)
+  - SwipeableTabBarController (1.0.4)
 
 DEPENDENCIES:
   - PageMenu
+  - SwipeableTabBarController (~> 1.0)
 
 SPEC CHECKSUMS:
   PageMenu: 9c38fd7e0d9ef4b1408320f55bb907bbc0e538dc
+  SwipeableTabBarController: a52688ad47614ba98611df30a788202db90620fe
 
-PODFILE CHECKSUM: e0011da34e8af05be4714e5775dc9f3f79fc9310
+PODFILE CHECKSUM: fbd958f01b976db5e94fd0fd693b971dfad0ae88
 
 COCOAPODS: 1.1.1

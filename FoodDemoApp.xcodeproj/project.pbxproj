@@ -15,7 +15,6 @@
 		E164B3091EC8CAF000EB20E4 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164B3081EC8CAF000EB20E4 /* CollectionHeaderView.swift */; };
 		E164B30F1EC94C2C00EB20E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E164B30E1EC94C2C00EB20E4 /* Assets.xcassets */; };
 		E164B3111ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164B3101ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift */; };
-		E1D35D111ECBA6D700F64106 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D101ECBA6D700F64106 /* CustomTabBarController.swift */; };
 		EB74D513670D7A1D11628126 /* Pods_FoodDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3576B1550FEA45E7CFE5DC9 /* Pods_FoodDemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,7 +32,6 @@
 		E164B3081EC8CAF000EB20E4 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		E164B30E1EC94C2C00EB20E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E164B3101ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipesCollectionViewCell.swift; sourceTree = "<group>"; };
-		E1D35D101ECBA6D700F64106 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +117,6 @@
 			children = (
 				E164B3081EC8CAF000EB20E4 /* CollectionHeaderView.swift */,
 				E164B3101ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift */,
-				E1D35D101ECBA6D700F64106 /* CustomTabBarController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -250,7 +247,6 @@
 			files = (
 				E164B3111ECA1F9D00EB20E4 /* RecipesCollectionViewCell.swift in Sources */,
 				E164B3071EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift in Sources */,
-				E1D35D111ECBA6D700F64106 /* CustomTabBarController.swift in Sources */,
 				E164B3091EC8CAF000EB20E4 /* CollectionHeaderView.swift in Sources */,
 				E164B2F41EC8BA6000EB20E4 /* MasterViewController.swift in Sources */,
 				E164B2F21EC8BA6000EB20E4 /* AppDelegate.swift in Sources */,

@@ -7,69 +7,106 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2520BA0B3D4B7B077853BEC1DD8A7566 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB6807B824F886EECA91B4A261D29F /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
-		265F730B9F83C55003B3EB5A679A530B /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB29CFF838957AAD084898B1BA5079D /* CAPSPageMenu+UIConfiguration.swift */; };
-		3F0B3BED808C58E726233DFE237DBCB9 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872BD8407639D02AEBB50105BA6F829B /* MenuItemView.swift */; };
-		49B6CEF0B2CAB56DB73A1B713F6570FF /* Pods-FoodDemoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFFAA09EDEF443180F25BFA0DE3B343 /* Pods-FoodDemoApp-dummy.m */; };
-		835A019848E47BFE8324D3A54D705EFB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F025A35A6DCD72583CA3E499FB5691D /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
-		94DCEF2D5991DD3F7634511BE1DDBCBE /* Pods-FoodDemoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA8B8DBFA0739D406D4EFDDA031CE65 /* Pods-FoodDemoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2FC75F65E8697D6C900CDEF5AC23CA4 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9874EF2391EDFCE0C522B0AA27009B /* CAPSPageMenu.swift */; };
-		A8179B19DDA0A59DDFAA23CF3F34695E /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DBD2B1EBD68616ED50041A87C75700 /* CAPSPageMenuConfiguration.swift */; };
-		A908AF7A811EDAFC540674BCA7C14FCC /* PageMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2D4EAB2DE1D2FF46DB50138DCFA32BC /* PageMenu-dummy.m */; };
+		1318985D8B7F91205BEA9A70F8530CA6 /* SwipeTransitioningProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C8C41B4953698D77ABD3D59C909C18 /* SwipeTransitioningProtocol.swift */; };
+		1C0E8F07AB0CB6F36DDABC6556E391A3 /* SwipeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806FB17E2271C65A227714BDBEACC428 /* SwipeInteractor.swift */; };
+		225B57FB1D6AAA3B20AB4ED0E1864E95 /* SwipeableTabBarController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F2235FE900C86971747BAA4E3D9AA1BF /* SwipeableTabBarController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2520BA0B3D4B7B077853BEC1DD8A7566 /* CAPSPageMenu+UIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F981DAA5BCDB86C18AEA751D32F35926 /* CAPSPageMenu+UIScrollViewDelegate.swift */; };
+		265F730B9F83C55003B3EB5A679A530B /* CAPSPageMenu+UIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584219C4115D1D8F579A32A77EAAB40F /* CAPSPageMenu+UIConfiguration.swift */; };
+		3887E3FDD82C97AADBF8F41CA9633B90 /* SwipeableTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6385D7BD036546675BE68A63D6086F6A /* SwipeableTabBarController.swift */; };
+		3F0B3BED808C58E726233DFE237DBCB9 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7581A995E01655679CEE464ECD5B787E /* MenuItemView.swift */; };
+		4DFAA2156B4748B67A5E37CDDD78D121 /* Pods-FoodDemoApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA8B8DBFA0739D406D4EFDDA031CE65 /* Pods-FoodDemoApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		500853E5E0970CDD08E21E3BCE5DA7FB /* UIKit+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A704E0C7B0F3EB929D903B952EBC6E0 /* UIKit+Extensions.swift */; };
+		63A3C56AF4A4098111C10E5EA099CB6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		823706156CA3076023A3C71C3B345265 /* SwipeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F87393B31ADE3527F831AFA12FC57E4 /* SwipeAnimation.swift */; };
+		835A019848E47BFE8324D3A54D705EFB /* CAPSPageMenu+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC525DBD61B53DD3CFA952785BA0063 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */; };
+		993B2C077A068B06B6968B94C5D610CE /* Pods-FoodDemoApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FFFAA09EDEF443180F25BFA0DE3B343 /* Pods-FoodDemoApp-dummy.m */; };
+		A2FC75F65E8697D6C900CDEF5AC23CA4 /* CAPSPageMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8479F503A3987E9331662C2BFBE0813C /* CAPSPageMenu.swift */; };
+		A8179B19DDA0A59DDFAA23CF3F34695E /* CAPSPageMenuConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A26DEF3D6F2096737C52F58E7AC1B8BE /* CAPSPageMenuConfiguration.swift */; };
+		A908AF7A811EDAFC540674BCA7C14FCC /* PageMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A60225647AF3E166EE5C30386DECBB /* PageMenu-dummy.m */; };
+		ADF5C912610EC4565B38C35B57355728 /* SwipeableTabBarController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2713C33C41515DC355BD69D0E388469B /* SwipeableTabBarController-dummy.m */; };
+		AF429DFE0E3E32D1DB8F5DD9659548F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		BD523073EAFDAB7664AF3126D6F452FA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
 		BD8331B30248B24D924667F544ADCD86 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		CF10E78D6DF84D472F415382DE2115B3 /* PageMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9FD5E27EB1D26CD324C5320E1C24A78 /* PageMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA5CA36C2E5A0DC8D497D5A4F983117E /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45D714B20E845D309648EFAAFCBC5C4 /* CAPSPageMenu+Options.swift */; };
-		EEA423D762E1E33AB022C85AEC653207 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		C5E3A0A6E90A2084CE614315E4779A4C /* SwipeAnimationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF4F5DD31B4D08540D86F8C8B3B9989 /* SwipeAnimationType.swift */; };
+		CF10E78D6DF84D472F415382DE2115B3 /* PageMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D2C7553E583756A917A9D3589E5370A /* PageMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA5CA36C2E5A0DC8D497D5A4F983117E /* CAPSPageMenu+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B0CEDBED87BCBFAFEBA895A5E5B3BC /* CAPSPageMenu+Options.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6D223E4A00D277D58D6B4B747C34348C /* PBXContainerItemProxy */ = {
+		3342F93C25FCBC30CE7B1A54DEBD82AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 978A447F57E812AEE5D676FF361F1416;
 			remoteInfo = PageMenu;
 		};
+		99D537BA1670194FCD48887B80552866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEEEC5DD8954D55949554687D93487E4;
+			remoteInfo = SwipeableTabBarController;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00B0CEDBED87BCBFAFEBA895A5E5B3BC /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+Options.swift"; path = "Classes/CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
+		1BC525DBD61B53DD3CFA952785BA0063 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; path = "Classes/CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
+		1D2C7553E583756A917A9D3589E5370A /* PageMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-umbrella.h"; sourceTree = "<group>"; };
+		2713C33C41515DC355BD69D0E388469B /* SwipeableTabBarController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeableTabBarController-dummy.m"; sourceTree = "<group>"; };
+		2728CF8D319C685F768E0FE7EFB0FA18 /* SwipeableTabBarController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-prefix.pch"; sourceTree = "<group>"; };
 		2BA8B8DBFA0739D406D4EFDDA031CE65 /* Pods-FoodDemoApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodDemoApp-umbrella.h"; sourceTree = "<group>"; };
 		2C64A4EBAD866D7EE048DBDDB1DC7BDD /* Pods-FoodDemoApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodDemoApp-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2F025A35A6DCD72583CA3E499FB5691D /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIGestureRecognizerDelegate.swift"; path = "Classes/CAPSPageMenu+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
-		34088CF8A5E28452E76F14B84470D93C /* PageMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-prefix.pch"; sourceTree = "<group>"; };
+		32C8C41B4953698D77ABD3D59C909C18 /* SwipeTransitioningProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitioningProtocol.swift; path = SwipeableTabBarController/Classes/SwipeTransitioningProtocol.swift; sourceTree = "<group>"; };
+		3C6216A26F4329AB519B1CC54F8A4E00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CDB1BC5736BCD1178DE89399E731A14 /* PageMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PageMenu.xcconfig; sourceTree = "<group>"; };
+		3F87393B31ADE3527F831AFA12FC57E4 /* SwipeAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimation.swift; path = SwipeableTabBarController/Classes/SwipeAnimation.swift; sourceTree = "<group>"; };
 		44D31B9218F89ECD24F1229CFE9F9624 /* Pods-FoodDemoApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodDemoApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		4CA122B69E09AA7D52A39DA94B038F4C /* Pods-FoodDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
 		4FFFAA09EDEF443180F25BFA0DE3B343 /* Pods-FoodDemoApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodDemoApp-dummy.m"; sourceTree = "<group>"; };
-		5A9874EF2391EDFCE0C522B0AA27009B /* CAPSPageMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenu.swift; path = Classes/CAPSPageMenu.swift; sourceTree = "<group>"; };
-		5BBB6807B824F886EECA91B4A261D29F /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIScrollViewDelegate.swift"; path = "Classes/CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		584219C4115D1D8F579A32A77EAAB40F /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIConfiguration.swift"; path = "Classes/CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6385D7BD036546675BE68A63D6086F6A /* SwipeableTabBarController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeableTabBarController.swift; path = SwipeableTabBarController/Classes/SwipeableTabBarController.swift; sourceTree = "<group>"; };
 		6D83B2A2B00174B77769ED702AD3901D /* Pods-FoodDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodDemoApp.release.xcconfig"; sourceTree = "<group>"; };
-		7B8BDFD5321094FC605044B814456B08 /* PageMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PageMenu.modulemap; sourceTree = "<group>"; };
-		7CB29CFF838957AAD084898B1BA5079D /* CAPSPageMenu+UIConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIConfiguration.swift"; path = "Classes/CAPSPageMenu+UIConfiguration.swift"; sourceTree = "<group>"; };
+		7581A995E01655679CEE464ECD5B787E /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Classes/MenuItemView.swift; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		872BD8407639D02AEBB50105BA6F829B /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Classes/MenuItemView.swift; sourceTree = "<group>"; };
+		806FB17E2271C65A227714BDBEACC428 /* SwipeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeInteractor.swift; path = SwipeableTabBarController/Classes/SwipeInteractor.swift; sourceTree = "<group>"; };
+		8479F503A3987E9331662C2BFBE0813C /* CAPSPageMenu.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenu.swift; path = Classes/CAPSPageMenu.swift; sourceTree = "<group>"; };
+		879E764AE69DAF70FAC4191C1C83DDE1 /* PageMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-prefix.pch"; sourceTree = "<group>"; };
+		8AF4F5DD31B4D08540D86F8C8B3B9989 /* SwipeAnimationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimationType.swift; path = SwipeableTabBarController/Classes/SwipeAnimationType.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A704E0C7B0F3EB929D903B952EBC6E0 /* UIKit+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIKit+Extensions.swift"; path = "SwipeableTabBarController/Classes/UIKit+Extensions.swift"; sourceTree = "<group>"; };
+		A057BD82C2CF134EA5765E773407871F /* PageMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PageMenu.modulemap; sourceTree = "<group>"; };
+		A155E33334EE9D61196532689B6DA913 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A26DEF3D6F2096737C52F58E7AC1B8BE /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenuConfiguration.swift; path = Classes/CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
+		A3F85884C7200DDEF18EBE9CD8204CE2 /* Pods_FoodDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoodDemoApp.framework; path = "Pods-FoodDemoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7A446710EE1FCB9080BEF9BB5ED5CF7 /* SwipeableTabBarController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeableTabBarController.xcconfig; sourceTree = "<group>"; };
 		AA03AB50895B17E800E083843C45B53D /* Pods-FoodDemoApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-FoodDemoApp.modulemap"; sourceTree = "<group>"; };
-		AC75A60B0A0913AF3B55E7DD8E053F38 /* Pods_FoodDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FoodDemoApp.framework; path = "Pods-FoodDemoApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B45D714B20E845D309648EFAAFCBC5C4 /* CAPSPageMenu+Options.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+Options.swift"; path = "Classes/CAPSPageMenu+Options.swift"; sourceTree = "<group>"; };
-		B9FD5E27EB1D26CD324C5320E1C24A78 /* PageMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PageMenu-umbrella.h"; sourceTree = "<group>"; };
-		C2D4EAB2DE1D2FF46DB50138DCFA32BC /* PageMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PageMenu-dummy.m"; sourceTree = "<group>"; };
+		C5A60225647AF3E166EE5C30386DECBB /* PageMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PageMenu-dummy.m"; sourceTree = "<group>"; };
 		CF1B3254A81186C957E2CBB342718BE0 /* Pods-FoodDemoApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodDemoApp-resources.sh"; sourceTree = "<group>"; };
 		D6E46B02F910A44B132F2A14D3C9D862 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7E9CAAE7D1F264B1F99FA681ACB3F36 /* PageMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PageMenu.xcconfig; sourceTree = "<group>"; };
-		E16B8A7BC80E832208FA85CFF77E39A4 /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PageMenu.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E1DBD2B1EBD68616ED50041A87C75700 /* CAPSPageMenuConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CAPSPageMenuConfiguration.swift; path = Classes/CAPSPageMenuConfiguration.swift; sourceTree = "<group>"; };
-		E4AF82F1695A6CC4E1FC58941C0279A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E07CDE020AB10D2005AF07EB2371158D /* SwipeableTabBarController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeableTabBarController.modulemap; sourceTree = "<group>"; };
+		EEFDF0DE656A02890DDE0629E4273AFD /* SwipeableTabBarController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeableTabBarController.framework; path = SwipeableTabBarController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2235FE900C86971747BAA4E3D9AA1BF /* SwipeableTabBarController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeableTabBarController-umbrella.h"; sourceTree = "<group>"; };
 		F9084CE2D6526CFA4DE28F6E706BA849 /* Pods-FoodDemoApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodDemoApp-frameworks.sh"; sourceTree = "<group>"; };
+		F981DAA5BCDB86C18AEA751D32F35926 /* CAPSPageMenu+UIScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CAPSPageMenu+UIScrollViewDelegate.swift"; path = "Classes/CAPSPageMenu+UIScrollViewDelegate.swift"; sourceTree = "<group>"; };
+		FA3DB602E8E131E5E585124259A33B7F /* PageMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PageMenu.framework; path = PageMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0BE4F107F332B0D7618F8628EB6744CA /* Frameworks */ = {
+		059DC6FECA338AFE482CD532B805D793 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEA423D762E1E33AB022C85AEC653207 /* Foundation.framework in Frameworks */,
+				63A3C56AF4A4098111C10E5EA099CB6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0470C847675BB11EC02377CABD440A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF429DFE0E3E32D1DB8F5DD9659548F4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,21 +122,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		024B5E4EE83A05A0E13DAA04E9277FB8 /* Pods */ = {
+		0C45FB27C22ABAE78E379B7A6CAB49D1 /* PageMenu */ = {
 			isa = PBXGroup;
 			children = (
-				B30989017CDA51950371E73818D6715F /* PageMenu */,
+				8479F503A3987E9331662C2BFBE0813C /* CAPSPageMenu.swift */,
+				00B0CEDBED87BCBFAFEBA895A5E5B3BC /* CAPSPageMenu+Options.swift */,
+				584219C4115D1D8F579A32A77EAAB40F /* CAPSPageMenu+UIConfiguration.swift */,
+				1BC525DBD61B53DD3CFA952785BA0063 /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
+				F981DAA5BCDB86C18AEA751D32F35926 /* CAPSPageMenu+UIScrollViewDelegate.swift */,
+				A26DEF3D6F2096737C52F58E7AC1B8BE /* CAPSPageMenuConfiguration.swift */,
+				7581A995E01655679CEE464ECD5B787E /* MenuItemView.swift */,
+				1ADFAB0F49D010A3D48583BCC327D378 /* Support Files */,
 			);
-			name = Pods;
+			name = PageMenu;
+			path = PageMenu;
 			sourceTree = "<group>";
 		};
-		15F18685ED1664073E7F3F8E461C33ED /* Products */ = {
+		1ADFAB0F49D010A3D48583BCC327D378 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E16B8A7BC80E832208FA85CFF77E39A4 /* PageMenu.framework */,
-				AC75A60B0A0913AF3B55E7DD8E053F38 /* Pods_FoodDemoApp.framework */,
+				A155E33334EE9D61196532689B6DA913 /* Info.plist */,
+				A057BD82C2CF134EA5765E773407871F /* PageMenu.modulemap */,
+				3CDB1BC5736BCD1178DE89399E731A14 /* PageMenu.xcconfig */,
+				C5A60225647AF3E166EE5C30386DECBB /* PageMenu-dummy.m */,
+				879E764AE69DAF70FAC4191C1C83DDE1 /* PageMenu-prefix.pch */,
+				1D2C7553E583756A917A9D3589E5370A /* PageMenu-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/PageMenu";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -116,6 +166,15 @@
 				7CEF0DA7810749FB601220E559505CB1 /* Pods-FoodDemoApp */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		6FBC6657984A3CC359B66F2F0E7FD9EF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C45FB27C22ABAE78E379B7A6CAB49D1 /* PageMenu */,
+				E87516D55D938B9D23D3A3C84ABC5E9B /* SwipeableTabBarController */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		7CEF0DA7810749FB601220E559505CB1 /* Pods-FoodDemoApp */ = {
@@ -141,40 +200,34 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				024B5E4EE83A05A0E13DAA04E9277FB8 /* Pods */,
-				15F18685ED1664073E7F3F8E461C33ED /* Products */,
+				6FBC6657984A3CC359B66F2F0E7FD9EF /* Pods */,
+				A27D7A3D6C34B715978983276D62CC40 /* Products */,
 				4B714638E1A0C3D52B7DB6DB3B86DE21 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8D3E576040FA4B3F4BB06C12D6BFC6CE /* Support Files */ = {
+		A27D7A3D6C34B715978983276D62CC40 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4AF82F1695A6CC4E1FC58941C0279A6 /* Info.plist */,
-				7B8BDFD5321094FC605044B814456B08 /* PageMenu.modulemap */,
-				D7E9CAAE7D1F264B1F99FA681ACB3F36 /* PageMenu.xcconfig */,
-				C2D4EAB2DE1D2FF46DB50138DCFA32BC /* PageMenu-dummy.m */,
-				34088CF8A5E28452E76F14B84470D93C /* PageMenu-prefix.pch */,
-				B9FD5E27EB1D26CD324C5320E1C24A78 /* PageMenu-umbrella.h */,
+				FA3DB602E8E131E5E585124259A33B7F /* PageMenu.framework */,
+				A3F85884C7200DDEF18EBE9CD8204CE2 /* Pods_FoodDemoApp.framework */,
+				EEFDF0DE656A02890DDE0629E4273AFD /* SwipeableTabBarController.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/PageMenu";
+			name = Products;
 			sourceTree = "<group>";
 		};
-		B30989017CDA51950371E73818D6715F /* PageMenu */ = {
+		B4C34B0725264D874ED9ECE0B4C5BF52 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5A9874EF2391EDFCE0C522B0AA27009B /* CAPSPageMenu.swift */,
-				B45D714B20E845D309648EFAAFCBC5C4 /* CAPSPageMenu+Options.swift */,
-				7CB29CFF838957AAD084898B1BA5079D /* CAPSPageMenu+UIConfiguration.swift */,
-				2F025A35A6DCD72583CA3E499FB5691D /* CAPSPageMenu+UIGestureRecognizerDelegate.swift */,
-				5BBB6807B824F886EECA91B4A261D29F /* CAPSPageMenu+UIScrollViewDelegate.swift */,
-				E1DBD2B1EBD68616ED50041A87C75700 /* CAPSPageMenuConfiguration.swift */,
-				872BD8407639D02AEBB50105BA6F829B /* MenuItemView.swift */,
-				8D3E576040FA4B3F4BB06C12D6BFC6CE /* Support Files */,
+				3C6216A26F4329AB519B1CC54F8A4E00 /* Info.plist */,
+				E07CDE020AB10D2005AF07EB2371158D /* SwipeableTabBarController.modulemap */,
+				A7A446710EE1FCB9080BEF9BB5ED5CF7 /* SwipeableTabBarController.xcconfig */,
+				2713C33C41515DC355BD69D0E388469B /* SwipeableTabBarController-dummy.m */,
+				2728CF8D319C685F768E0FE7EFB0FA18 /* SwipeableTabBarController-prefix.pch */,
+				F2235FE900C86971747BAA4E3D9AA1BF /* SwipeableTabBarController-umbrella.h */,
 			);
-			name = PageMenu;
-			path = PageMenu;
+			name = "Support Files";
+			path = "../Target Support Files/SwipeableTabBarController";
 			sourceTree = "<group>";
 		};
 		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
@@ -186,22 +239,45 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		E87516D55D938B9D23D3A3C84ABC5E9B /* SwipeableTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				6385D7BD036546675BE68A63D6086F6A /* SwipeableTabBarController.swift */,
+				3F87393B31ADE3527F831AFA12FC57E4 /* SwipeAnimation.swift */,
+				8AF4F5DD31B4D08540D86F8C8B3B9989 /* SwipeAnimationType.swift */,
+				806FB17E2271C65A227714BDBEACC428 /* SwipeInteractor.swift */,
+				32C8C41B4953698D77ABD3D59C909C18 /* SwipeTransitioningProtocol.swift */,
+				9A704E0C7B0F3EB929D903B952EBC6E0 /* UIKit+Extensions.swift */,
+				B4C34B0725264D874ED9ECE0B4C5BF52 /* Support Files */,
+			);
+			name = SwipeableTabBarController;
+			path = SwipeableTabBarController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		820215C7D864AF1A3E5B88216A61686D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DFAA2156B4748B67A5E37CDDD78D121 /* Pods-FoodDemoApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAE6BA9F8DC604CFC5F5C30BDC5B4BDE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				225B57FB1D6AAA3B20AB4ED0E1864E95 /* SwipeableTabBarController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCF03216B56796EAEF26041733FDD894 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CF10E78D6DF84D472F415382DE2115B3 /* PageMenu-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E90FDF7A57229D7653BE1F59AB67C1F7 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				94DCEF2D5991DD3F7634511BE1DDBCBE /* Pods-FoodDemoApp-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,25 +298,43 @@
 			);
 			name = PageMenu;
 			productName = PageMenu;
-			productReference = E16B8A7BC80E832208FA85CFF77E39A4 /* PageMenu.framework */;
+			productReference = FA3DB602E8E131E5E585124259A33B7F /* PageMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		BCF0282390E1574246C5649CDA3A604B /* Pods-FoodDemoApp */ = {
+		A8F2AC76D4F24168B3403ADED5C6CB35 /* Pods-FoodDemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3F8D6DB84F476E747050F5A0BE17E6CD /* Build configuration list for PBXNativeTarget "Pods-FoodDemoApp" */;
+			buildConfigurationList = CEAAD85F087F3C4854B1E550A6538957 /* Build configuration list for PBXNativeTarget "Pods-FoodDemoApp" */;
 			buildPhases = (
-				451DEBE2F3CCB4377672364038FF02CA /* Sources */,
-				0BE4F107F332B0D7618F8628EB6744CA /* Frameworks */,
-				E90FDF7A57229D7653BE1F59AB67C1F7 /* Headers */,
+				E82792FC8F9F17D932E988289A87D25E /* Sources */,
+				D0470C847675BB11EC02377CABD440A1 /* Frameworks */,
+				820215C7D864AF1A3E5B88216A61686D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A71BEDB3622C27567703C8C59C0B087 /* PBXTargetDependency */,
+				F39EC162355621E3214E20767412998B /* PBXTargetDependency */,
+				7075A9447707FD96CF4FFF054C467E6D /* PBXTargetDependency */,
 			);
 			name = "Pods-FoodDemoApp";
 			productName = "Pods-FoodDemoApp";
-			productReference = AC75A60B0A0913AF3B55E7DD8E053F38 /* Pods_FoodDemoApp.framework */;
+			productReference = A3F85884C7200DDEF18EBE9CD8204CE2 /* Pods_FoodDemoApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEEEC5DD8954D55949554687D93487E4 /* SwipeableTabBarController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 926FE3895FB4B824F6D91888E9CAD622 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */;
+			buildPhases = (
+				0D74C7002E77DBE86971D4BCF1E0C680 /* Sources */,
+				059DC6FECA338AFE482CD532B805D793 /* Frameworks */,
+				AAE6BA9F8DC604CFC5F5C30BDC5B4BDE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeableTabBarController;
+			productName = SwipeableTabBarController;
+			productReference = EEFDF0DE656A02890DDE0629E4273AFD /* SwipeableTabBarController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -260,22 +354,29 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 15F18685ED1664073E7F3F8E461C33ED /* Products */;
+			productRefGroup = A27D7A3D6C34B715978983276D62CC40 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				978A447F57E812AEE5D676FF361F1416 /* PageMenu */,
-				BCF0282390E1574246C5649CDA3A604B /* Pods-FoodDemoApp */,
+				A8F2AC76D4F24168B3403ADED5C6CB35 /* Pods-FoodDemoApp */,
+				BEEEC5DD8954D55949554687D93487E4 /* SwipeableTabBarController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		451DEBE2F3CCB4377672364038FF02CA /* Sources */ = {
+		0D74C7002E77DBE86971D4BCF1E0C680 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49B6CEF0B2CAB56DB73A1B713F6570FF /* Pods-FoodDemoApp-dummy.m in Sources */,
+				ADF5C912610EC4565B38C35B57355728 /* SwipeableTabBarController-dummy.m in Sources */,
+				3887E3FDD82C97AADBF8F41CA9633B90 /* SwipeableTabBarController.swift in Sources */,
+				823706156CA3076023A3C71C3B345265 /* SwipeAnimation.swift in Sources */,
+				C5E3A0A6E90A2084CE614315E4779A4C /* SwipeAnimationType.swift in Sources */,
+				1C0E8F07AB0CB6F36DDABC6556E391A3 /* SwipeInteractor.swift in Sources */,
+				1318985D8B7F91205BEA9A70F8530CA6 /* SwipeTransitioningProtocol.swift in Sources */,
+				500853E5E0970CDD08E21E3BCE5DA7FB /* UIKit+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,14 +395,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E82792FC8F9F17D932E988289A87D25E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				993B2C077A068B06B6968B94C5D610CE /* Pods-FoodDemoApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A71BEDB3622C27567703C8C59C0B087 /* PBXTargetDependency */ = {
+		7075A9447707FD96CF4FFF054C467E6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeableTabBarController;
+			target = BEEEC5DD8954D55949554687D93487E4 /* SwipeableTabBarController */;
+			targetProxy = 99D537BA1670194FCD48887B80552866 /* PBXContainerItemProxy */;
+		};
+		F39EC162355621E3214E20767412998B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PageMenu;
 			target = 978A447F57E812AEE5D676FF361F1416 /* PageMenu */;
-			targetProxy = 6D223E4A00D277D58D6B4B747C34348C /* PBXContainerItemProxy */;
+			targetProxy = 3342F93C25FCBC30CE7B1A54DEBD82AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -352,7 +467,7 @@
 		};
 		34BEC97EA2B6505FA832E9D2508686FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7E9CAAE7D1F264B1F99FA681ACB3F36 /* PageMenu.xcconfig */;
+			baseConfigurationReference = 3CDB1BC5736BCD1178DE89399E731A14 /* PageMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -383,42 +498,7 @@
 			};
 			name = Debug;
 		};
-		5CBAAB97E6EB548406B607A29F0B6807 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D83B2A2B00174B77769ED702AD3901D /* Pods-FoodDemoApp.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-FoodDemoApp/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FoodDemoApp/Pods-FoodDemoApp.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_FoodDemoApp;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		766D6C7EF3215D0E3043E676EF823EDC /* Debug */ = {
+		4140FF13FE3AB826768F2121D642753B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4CA122B69E09AA7D52A39DA94B038F4C /* Pods-FoodDemoApp.debug.xcconfig */;
 			buildSettings = {
@@ -454,9 +534,76 @@
 			};
 			name = Debug;
 		};
+		60116FA7D10E73639F4EEE3712254399 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A446710EE1FCB9080BEF9BB5ED5CF7 /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		804704E112BDEE0BD152BB39E3534EBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D83B2A2B00174B77769ED702AD3901D /* Pods-FoodDemoApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodDemoApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodDemoApp/Pods-FoodDemoApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FoodDemoApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		83C26302AB96D9AA8FF8E4B1F886D215 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7E9CAAE7D1F264B1F99FA681ACB3F36 /* PageMenu.xcconfig */;
+			baseConfigurationReference = 3CDB1BC5736BCD1178DE89399E731A14 /* PageMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -485,6 +632,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		B6291DD932787DE36E8C26E9FDD4C4B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7A446710EE1FCB9080BEF9BB5ED5CF7 /* SwipeableTabBarController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeableTabBarController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeableTabBarController/SwipeableTabBarController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwipeableTabBarController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -538,11 +718,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3F8D6DB84F476E747050F5A0BE17E6CD /* Build configuration list for PBXNativeTarget "Pods-FoodDemoApp" */ = {
+		926FE3895FB4B824F6D91888E9CAD622 /* Build configuration list for PBXNativeTarget "SwipeableTabBarController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				766D6C7EF3215D0E3043E676EF823EDC /* Debug */,
-				5CBAAB97E6EB548406B607A29F0B6807 /* Release */,
+				B6291DD932787DE36E8C26E9FDD4C4B0 /* Debug */,
+				60116FA7D10E73639F4EEE3712254399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -552,6 +732,15 @@
 			buildConfigurations = (
 				34BEC97EA2B6505FA832E9D2508686FD /* Debug */,
 				83C26302AB96D9AA8FF8E4B1F886D215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEAAD85F087F3C4854B1E550A6538957 /* Build configuration list for PBXNativeTarget "Pods-FoodDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4140FF13FE3AB826768F2121D642753B /* Debug */,
+				804704E112BDEE0BD152BB39E3534EBB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

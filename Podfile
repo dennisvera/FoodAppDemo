@@ -7,5 +7,6 @@ target 'FoodDemoApp' do
 
   # Pods for FoodDemoApp
   pod 'PageMenu'
+  pod 'SwipeableTabBarController', '~> 1.0'
 
 end
