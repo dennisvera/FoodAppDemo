@@ -1,14 +1,14 @@
 //
-//  CollectionHeaderView.swift
+//  HomeCollectionHeaderView.swift
 //  FoodDemoApp
 //
-//  Created by Dennis Vera on 5/14/17.
+//  Created by Flatiron School on 5/17/17.
 //  Copyright © 2017 Dennis Vera. All rights reserved.
 //
 
 import UIKit
 
-class CollectionHeaderView: UICollectionReusableView {
+class HomeCollectionHeaderView: UICollectionReusableView {
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var foregroundImage: UIImageView!
     
@@ -38,5 +38,4 @@ class CollectionHeaderView: UICollectionReusableView {
         }
     }
 }
-
 
