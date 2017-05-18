@@ -220,8 +220,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="292"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-DB-93w">
-                                                    <rect key="frame" x="30" y="10" width="314" height="22"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                    <rect key="frame" x="40" y="10" width="294" height="22"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -241,10 +241,10 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="DcR-DB-93w" firstAttribute="leading" secondItem="OhA-XQ-yH2" secondAttribute="leading" constant="30" id="0ky-kL-B77"/>
+                                                <constraint firstItem="DcR-DB-93w" firstAttribute="leading" secondItem="OhA-XQ-yH2" secondAttribute="leading" constant="40" id="0ky-kL-B77"/>
                                                 <constraint firstItem="cFg-Io-pJe" firstAttribute="top" secondItem="DcR-DB-93w" secondAttribute="bottom" constant="40" id="11d-oc-VmO"/>
                                                 <constraint firstItem="HWy-dN-hcw" firstAttribute="centerX" secondItem="OhA-XQ-yH2" secondAttribute="centerX" constant="-5" id="85r-ZY-tcC"/>
-                                                <constraint firstItem="DcR-DB-93w" firstAttribute="trailing" secondItem="OhA-XQ-yH2" secondAttribute="trailing" constant="-30" id="Btf-2t-H0O"/>
+                                                <constraint firstItem="DcR-DB-93w" firstAttribute="trailing" secondItem="OhA-XQ-yH2" secondAttribute="trailing" constant="-40" id="Btf-2t-H0O"/>
                                                 <constraint firstItem="HWy-dN-hcw" firstAttribute="top" secondItem="DcR-DB-93w" secondAttribute="bottom" constant="6" id="Vgp-ae-ZjD"/>
                                                 <constraint firstItem="DcR-DB-93w" firstAttribute="top" secondItem="OhA-XQ-yH2" secondAttribute="top" constant="10" id="XaI-RB-k2U"/>
                                                 <constraint firstItem="cFg-Io-pJe" firstAttribute="bottom" secondItem="OhA-XQ-yH2" secondAttribute="bottom" id="ZY6-DH-uRa"/>

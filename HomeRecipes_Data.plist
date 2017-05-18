@@ -4,17 +4,9 @@
 <array>
 	<dict>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Honeydew Melon and Cilantro Ice Pops</string>
 		<key>recipeImage</key>
-		<string>MochaBrownieRecipe</string>
-		<key>chefImage</key>
-		<string>Katie Lee</string>
-	</dict>
-	<dict>
-		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
-		<key>recipeImage</key>
-		<string>MochaBrownieRecipe</string>
+		<string>honeyDewCilantroPops</string>
 		<key>chefImage</key>
 		<string>foodNetworkImage</string>
 	</dict>
@@ -24,37 +16,45 @@
 		<key>recipeImage</key>
 		<string>MochaBrownieRecipe</string>
 		<key>chefImage</key>
+		<string>Katie Lee</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<string>Watermelon Granita</string>
+		<key>recipeImage</key>
+		<string>watermelonGranita</string>
+		<key>chefImage</key>
 		<string>Geoffrey Zakarian</string>
 	</dict>
 	<dict>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Frozen Key Lime Pie</string>
 		<key>recipeImage</key>
-		<string>MochaBrownieRecipe</string>
-		<key>chefImage</key>
-		<string>Alton Brown</string>
-	</dict>
-	<dict>
-		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
-		<key>recipeImage</key>
-		<string>MochaBrownieRecipe</string>
+		<string>frozenkeyLimePie</string>
 		<key>chefImage</key>
 		<string>Eddie Jackson</string>
 	</dict>
 	<dict>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Floating Island</string>
 		<key>recipeImage</key>
-		<string>MochaBrownieRecipe</string>
+		<string>floatingIsland</string>
+		<key>chefImage</key>
+		<string>Alton Brown</string>
+	</dict>
+	<dict>
+		<key>recipe</key>
+		<string>Southern Pecan Pie</string>
+		<key>recipeImage</key>
+		<string>pecanPie</string>
 		<key>chefImage</key>
 		<string>Anne Burell</string>
 	</dict>
 	<dict>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Panna Cotta</string>
 		<key>recipeImage</key>
-		<string>MochaBrownieRecipe</string>
+		<string>pannaCotta</string>
 		<key>chefImage</key>
 		<string>Bobby Flay</string>
 	</dict>

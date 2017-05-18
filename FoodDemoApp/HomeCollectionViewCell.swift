@@ -16,6 +16,8 @@ class HomeCollectionViewCell: UICollectionViewCell {
     var recipe: HomeRecipes? {
         didSet {
             chefImage.layer.cornerRadius = chefImage.frame.size.width/2
+            chefImage.layer.borderWidth = 3
+            chefImage.layer.borderColor = UIColor.white.cgColor
             chefImage.clipsToBounds = true
             
             if let theRecipe = recipe {
