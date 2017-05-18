@@ -106,5 +106,13 @@
 		<key>recipe</key>
 		<string>Mocha Brownie Ice Cream Sandwiches</string>
 	</dict>
+	<dict>
+		<key>name</key>
+		<string>Rachael Ray</string>
+		<key>title</key>
+		<string>Chef</string>
+		<key>recipe</key>
+		<string>Mocha Brownie Ice Cream Sandwiches</string>
+	</dict>
 </array>
 </plist>
