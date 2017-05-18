@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yXo-HK-cNC">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="yXo-HK-cNC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -56,22 +59,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ouc-ap-wvk">
-                            <size key="itemSize" width="200" height="512"/>
+                            <size key="itemSize" width="200" height="200"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefCell" id="9Sc-al-cTs" customClass="ChefsCollectionViewCell" customModule="FoodDemoApp" customModuleProvider="target">
-                                <rect key="frame" x="88" y="0.0" width="200" height="512"/>
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="512"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYr-5R-OLD">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gzp-IW-Qih" userLabel="chefHeadshot">
+                                                    <rect key="frame" x="45" y="30" width="110" height="110"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="110" id="KOG-cv-bXT"/>
                                                         <constraint firstAttribute="height" constant="110" id="awA-Tw-R4P"/>
@@ -85,6 +90,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNm-f1-r92" userLabel="chefName">
+                                            <rect key="frame" x="20" y="154" width="160" height="17"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -192,44 +198,57 @@
         <scene sceneID="chE-V7-21K">
             <objects>
                 <collectionViewController id="lJr-6j-jpi" customClass="HomeCollectionViewController" customModule="FoodDemoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="EFR-xF-Fna">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="EFR-xF-Fna">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="v9A-mO-gQI" customClass="StretchyHeaderLayout" customModule="FoodDemoApp" customModuleProvider="target">
-                            <size key="itemSize" width="200" height="340"/>
+                            <size key="itemSize" width="374" height="292"/>
                             <size key="headerReferenceSize" width="50" height="180"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeCell" id="bhK-a2-9U1" customClass="HomeCollectionViewCell" customModule="FoodDemoApp" customModuleProvider="target">
-                                <rect key="frame" x="1" y="180" width="374" height="252"/>
+                                <rect key="frame" x="1" y="180" width="374" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="252"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="292"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhA-XQ-yH2">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="292"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recipe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DcR-DB-93w">
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                                    <rect key="frame" x="30" y="10" width="314" height="22"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MochaBrownieRecipe" translatesAutoresizingMaskIntoConstraints="NO" id="cFg-Io-pJe">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cFg-Io-pJe">
+                                                    <rect key="frame" x="0.0" y="72" width="374" height="220"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="173" id="dZC-Yw-pgW"/>
+                                                        <constraint firstAttribute="height" constant="220" id="dZC-Yw-pgW"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HWy-dN-hcw">
+                                                    <rect key="frame" x="147" y="38" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="70" id="PUh-0b-ShJ"/>
+                                                        <constraint firstAttribute="height" constant="70" id="lix-60-mcj"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="DcR-DB-93w" firstAttribute="leading" secondItem="OhA-XQ-yH2" secondAttribute="leading" constant="30" id="0ky-kL-B77"/>
-                                                <constraint firstItem="cFg-Io-pJe" firstAttribute="top" secondItem="DcR-DB-93w" secondAttribute="bottom" constant="27" id="1Gp-II-bxz"/>
-                                                <constraint firstAttribute="trailing" secondItem="DcR-DB-93w" secondAttribute="trailing" constant="30" id="Btf-2t-H0O"/>
-                                                <constraint firstItem="DcR-DB-93w" firstAttribute="top" secondItem="OhA-XQ-yH2" secondAttribute="top" constant="30" id="XaI-RB-k2U"/>
-                                                <constraint firstAttribute="trailing" secondItem="cFg-Io-pJe" secondAttribute="trailing" id="umK-cP-b98"/>
+                                                <constraint firstItem="cFg-Io-pJe" firstAttribute="top" secondItem="DcR-DB-93w" secondAttribute="bottom" constant="40" id="11d-oc-VmO"/>
+                                                <constraint firstItem="HWy-dN-hcw" firstAttribute="centerX" secondItem="OhA-XQ-yH2" secondAttribute="centerX" constant="-5" id="85r-ZY-tcC"/>
+                                                <constraint firstItem="DcR-DB-93w" firstAttribute="trailing" secondItem="OhA-XQ-yH2" secondAttribute="trailing" constant="-30" id="Btf-2t-H0O"/>
+                                                <constraint firstItem="HWy-dN-hcw" firstAttribute="top" secondItem="DcR-DB-93w" secondAttribute="bottom" constant="6" id="Vgp-ae-ZjD"/>
+                                                <constraint firstItem="DcR-DB-93w" firstAttribute="top" secondItem="OhA-XQ-yH2" secondAttribute="top" constant="10" id="XaI-RB-k2U"/>
+                                                <constraint firstItem="cFg-Io-pJe" firstAttribute="bottom" secondItem="OhA-XQ-yH2" secondAttribute="bottom" id="ZY6-DH-uRa"/>
+                                                <constraint firstItem="cFg-Io-pJe" firstAttribute="trailing" secondItem="OhA-XQ-yH2" secondAttribute="trailing" id="umK-cP-b98"/>
                                                 <constraint firstItem="cFg-Io-pJe" firstAttribute="leading" secondItem="OhA-XQ-yH2" secondAttribute="leading" id="xCE-dR-PR4"/>
                                             </constraints>
                                         </view>
@@ -241,8 +260,9 @@
                                     <constraint firstItem="OhA-XQ-yH2" firstAttribute="leading" secondItem="bhK-a2-9U1" secondAttribute="leading" id="hmR-oW-a6l"/>
                                     <constraint firstAttribute="trailing" secondItem="OhA-XQ-yH2" secondAttribute="trailing" id="zmV-f2-7Lj"/>
                                 </constraints>
-                                <size key="customSize" width="374" height="252"/>
+                                <size key="customSize" width="374" height="292"/>
                                 <connections>
+                                    <outlet property="chefImage" destination="HWy-dN-hcw" id="fMb-e0-2xy"/>
                                     <outlet property="dishImageView" destination="cFg-Io-pJe" id="aDB-9x-2j9"/>
                                     <outlet property="recipeTitleLabel" destination="DcR-DB-93w" id="p7p-qk-fo4"/>
                                 </connections>
@@ -253,12 +273,14 @@
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="HeaderBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="gge-UT-Aep">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="180" id="hbv-4a-JPS"/>
                                         <constraint firstAttribute="width" secondItem="gge-UT-Aep" secondAttribute="height" multiplier="25:12" id="xWM-cr-hp7"/>
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodNetworkImage" translatesAutoresizingMaskIntoConstraints="NO" id="OIy-Oo-CIT">
+                                    <rect key="frame" x="147.5" y="50" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="OIy-Oo-CIT" secondAttribute="height" multiplier="1:1" id="jZp-xs-Gdz"/>
                                         <constraint firstAttribute="height" constant="80" id="m00-Gn-0nU"/>
@@ -329,7 +351,6 @@
     </scenes>
     <resources>
         <image name="HeaderBackgroundImage" width="1200" height="1200"/>
-        <image name="MochaBrownieRecipe" width="420" height="420"/>
         <image name="chefIcon" width="30" height="31"/>
         <image name="foodNetworkImage" width="234" height="234"/>
         <image name="homeIcon" width="39" height="30"/>

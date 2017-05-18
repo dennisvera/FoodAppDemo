@@ -20,6 +20,7 @@
 		E1D35D1A1ECCA77000F64106 /* ChefsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D191ECCA77000F64106 /* ChefsCollectionViewController.swift */; };
 		E1D35D201ECCAB6800F64106 /* ChefsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D1F1ECCAB6800F64106 /* ChefsCollectionViewCell.swift */; };
 		E1D35D221ECCEEF300F64106 /* Chefs_Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1D35D211ECCEEF300F64106 /* Chefs_Data.plist */; };
+		E1D35D241ECDD23B00F64106 /* HomeRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D231ECDD23B00F64106 /* HomeRecipes.swift */; };
 		EB74D513670D7A1D11628126 /* Pods_FoodDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3576B1550FEA45E7CFE5DC9 /* Pods_FoodDemoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		E1D35D191ECCA77000F64106 /* ChefsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefsCollectionViewController.swift; sourceTree = "<group>"; };
 		E1D35D1F1ECCAB6800F64106 /* ChefsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefsCollectionViewCell.swift; sourceTree = "<group>"; };
 		E1D35D211ECCEEF300F64106 /* Chefs_Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Chefs_Data.plist; sourceTree = "<group>"; };
+		E1D35D231ECDD23B00F64106 /* HomeRecipes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRecipes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,9 +139,10 @@
 		E1D35D121ECCA0BF00F64106 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E1D35D231ECDD23B00F64106 /* HomeRecipes.swift */,
+				E1D35D171ECCA58900F64106 /* Chefs.swift */,
 				1BF22BA81ECD35F300E332F4 /* HomeRecipes_Data.plist */,
 				E1D35D211ECCEEF300F64106 /* Chefs_Data.plist */,
-				E1D35D171ECCA58900F64106 /* Chefs.swift */,
 			);
 			name = Data;
 			path = ..;
@@ -275,6 +278,7 @@
 				E1D35D1A1ECCA77000F64106 /* ChefsCollectionViewController.swift in Sources */,
 				1BF22BA51ECD2D3B00E332F4 /* HomeCollectionHeaderView.swift in Sources */,
 				E1D35D201ECCAB6800F64106 /* ChefsCollectionViewCell.swift in Sources */,
+				E1D35D241ECDD23B00F64106 /* HomeRecipes.swift in Sources */,
 				1BF22BA71ECD2E4400E332F4 /* HomeCollectionViewCell.swift in Sources */,
 				E164B3071EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift in Sources */,
 				E164B2F21EC8BA6000EB20E4 /* AppDelegate.swift in Sources */,

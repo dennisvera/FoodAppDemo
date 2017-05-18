@@ -10,7 +10,7 @@ import UIKit
 
 class HomeCollectionViewController: UICollectionViewController {
     
-    let recipeData = Chefs.loadChefs()
+    let recipeData = HomeRecipes.loadRecipes()
     let columns: CGFloat = 1.0
     let inset: CGFloat = 6.0
     let spacing: CGFloat = 4.0
@@ -19,7 +19,7 @@ class HomeCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.tabBarController?.tabBar.tintColor = UIColor.red
     }
     
@@ -44,8 +44,8 @@ extension HomeCollectionViewController {
         
         // Configure the cell
         let recipe = recipeData[indexPath.item]
-        cell.chef = recipe
-
+        cell.recipe = recipe
+        
         return cell
     }
     

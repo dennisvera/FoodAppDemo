@@ -9,24 +9,27 @@
 import UIKit
 
 class HomeCollectionViewCell: UICollectionViewCell {
-    @IBOutlet var dishImageView: UIImageView!
     @IBOutlet var recipeTitleLabel: UILabel!
+    @IBOutlet var dishImageView: UIImageView!
+    @IBOutlet var chefImage: UIImageView!
     
-    var chef: Chefs? {
+    var recipe: HomeRecipes? {
         didSet {
-            dishImageView.layer.cornerRadius = dishImageView.frame.size.width/2
-            dishImageView.clipsToBounds = true
+            chefImage.layer.cornerRadius = chefImage.frame.size.width/2
+            chefImage.clipsToBounds = true
             
-            if let theChef = chef {
-                dishImageView.image = UIImage(named: theChef.name)
-                recipeTitleLabel.text = theChef.recipe
+            if let theRecipe = recipe {
+                recipeTitleLabel.text = theRecipe.recipe
+                dishImageView.image = UIImage(named: theRecipe.recipeImage)
+                chefImage.image = UIImage(named: theRecipe.chefImage)
             }
         }
     }
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        dishImageView.image = nil
         recipeTitleLabel.text = ""
+        dishImageView.image = nil
+        chefImage.image = nil
     }
 }
