@@ -1,25 +1,26 @@
 //
-//  StretchyHeaderLayout.swift
+//  ChefDetailStretchyHeaderAttributes.swift
 //  FoodDemoApp
 //
-//  Created by Dennis Vera on 5/14/17.
+//  Created by Dennis Vera on 5/19/17.
 //  Copyright © 2017 Dennis Vera. All rights reserved.
 //
 
 import UIKit
 
-class StretchyHeaderAttributes: UICollectionViewLayoutAttributes {
+class ChefDetailStretchyHeaderAttributes: UICollectionViewLayoutAttributes {
+
     
     var deltaY: CGFloat = 0
     
     override func copy(with zone: NSZone?) -> Any {
-        let copy = super.copy(with: zone) as! StretchyHeaderAttributes
+        let copy = super.copy(with: zone) as! ChefDetailStretchyHeaderAttributes
         copy.deltaY = deltaY
         return copy
     }
     
     override func isEqual(_ object: Any?) -> Bool {
-        if let attributes = object as? StretchyHeaderAttributes {
+        if let attributes = object as? ChefDetailStretchyHeaderAttributes {
             if attributes.deltaY == deltaY {
                 return super.isEqual(object)
             }
@@ -28,16 +29,16 @@ class StretchyHeaderAttributes: UICollectionViewLayoutAttributes {
     }
 }
 
-class StretchyHeaderLayout: UICollectionViewFlowLayout {
+class ChefDetailStretchyHeaderLayout: UICollectionViewFlowLayout {
     
     var maximumStretchHeight: CGFloat = 0
     
     override class var layoutAttributesClass : AnyClass {
-        return StretchyHeaderAttributes.self
+        return ChefDetailStretchyHeaderAttributes.self
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
-        let layoutAttributes = super.layoutAttributesForElements(in: rect)! as! [StretchyHeaderAttributes]
+        let layoutAttributes = super.layoutAttributesForElements(in: rect)! as! [ChefDetailStretchyHeaderAttributes]
         
         let offset = collectionView!.contentOffset
         if (offset.y < 0) {

@@ -16,6 +16,10 @@
 		E164B2FC1EC8BA6000EB20E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E164B2FA1EC8BA6000EB20E4 /* LaunchScreen.storyboard */; };
 		E164B3071EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E164B3061EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift */; };
 		E164B30F1EC94C2C00EB20E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E164B30E1EC94C2C00EB20E4 /* Assets.xcassets */; };
+		E1780A3C1ECF7DB600702FA0 /* ChefDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1780A3B1ECF7DB600702FA0 /* ChefDetailCollectionViewController.swift */; };
+		E1780A3E1ECF7E5500702FA0 /* ChefDetailCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1780A3D1ECF7E5500702FA0 /* ChefDetailCollectionHeaderView.swift */; };
+		E1780A401ECFA89D00702FA0 /* ChefDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1780A3F1ECFA89D00702FA0 /* ChefDetailCollectionViewCell.swift */; };
+		E1780A421ECFB51F00702FA0 /* ChefDetailStretchyHeaderAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1780A411ECFB51F00702FA0 /* ChefDetailStretchyHeaderAttributes.swift */; };
 		E1D35D181ECCA58900F64106 /* Chefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D171ECCA58900F64106 /* Chefs.swift */; };
 		E1D35D1A1ECCA77000F64106 /* ChefsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D191ECCA77000F64106 /* ChefsCollectionViewController.swift */; };
 		E1D35D201ECCAB6800F64106 /* ChefsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D35D1F1ECCAB6800F64106 /* ChefsCollectionViewCell.swift */; };
@@ -39,6 +43,10 @@
 		E164B2FD1EC8BA6000EB20E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E164B3061EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 		E164B30E1EC94C2C00EB20E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1780A3B1ECF7DB600702FA0 /* ChefDetailCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefDetailCollectionViewController.swift; sourceTree = "<group>"; };
+		E1780A3D1ECF7E5500702FA0 /* ChefDetailCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefDetailCollectionHeaderView.swift; sourceTree = "<group>"; };
+		E1780A3F1ECFA89D00702FA0 /* ChefDetailCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		E1780A411ECFB51F00702FA0 /* ChefDetailStretchyHeaderAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefDetailStretchyHeaderAttributes.swift; sourceTree = "<group>"; };
 		E1D35D171ECCA58900F64106 /* Chefs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chefs.swift; sourceTree = "<group>"; };
 		E1D35D191ECCA77000F64106 /* ChefsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefsCollectionViewController.swift; sourceTree = "<group>"; };
 		E1D35D1F1ECCAB6800F64106 /* ChefsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChefsCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -114,6 +122,7 @@
 			children = (
 				1BF22BA21ECD2B4B00E332F4 /* HomeCollectionViewController.swift */,
 				E1D35D191ECCA77000F64106 /* ChefsCollectionViewController.swift */,
+				E1780A3B1ECF7DB600702FA0 /* ChefDetailCollectionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -122,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E164B3061EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift */,
+				E1780A411ECFB51F00702FA0 /* ChefDetailStretchyHeaderAttributes.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -132,6 +142,8 @@
 				1BF22BA41ECD2D3B00E332F4 /* HomeCollectionHeaderView.swift */,
 				1BF22BA61ECD2E4400E332F4 /* HomeCollectionViewCell.swift */,
 				E1D35D1F1ECCAB6800F64106 /* ChefsCollectionViewCell.swift */,
+				E1780A3D1ECF7E5500702FA0 /* ChefDetailCollectionHeaderView.swift */,
+				E1780A3F1ECFA89D00702FA0 /* ChefDetailCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -275,14 +287,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BF22BA31ECD2B4B00E332F4 /* HomeCollectionViewController.swift in Sources */,
+				E1780A3E1ECF7E5500702FA0 /* ChefDetailCollectionHeaderView.swift in Sources */,
 				E1D35D1A1ECCA77000F64106 /* ChefsCollectionViewController.swift in Sources */,
 				1BF22BA51ECD2D3B00E332F4 /* HomeCollectionHeaderView.swift in Sources */,
 				E1D35D201ECCAB6800F64106 /* ChefsCollectionViewCell.swift in Sources */,
 				E1D35D241ECDD23B00F64106 /* HomeRecipes.swift in Sources */,
 				1BF22BA71ECD2E4400E332F4 /* HomeCollectionViewCell.swift in Sources */,
 				E164B3071EC8C9DE00EB20E4 /* StretchyHeaderLayout.swift in Sources */,
+				E1780A3C1ECF7DB600702FA0 /* ChefDetailCollectionViewController.swift in Sources */,
+				E1780A401ECFA89D00702FA0 /* ChefDetailCollectionViewCell.swift in Sources */,
 				E164B2F21EC8BA6000EB20E4 /* AppDelegate.swift in Sources */,
 				E1D35D181ECCA58900F64106 /* Chefs.swift in Sources */,
+				E1780A421ECFB51F00702FA0 /* ChefDetailStretchyHeaderAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,18 +1,19 @@
 //
-//  HomeCollectionViewController.swift
+//  ChefDetailCollectionViewController.swift
 //  FoodDemoApp
 //
-//  Created by Flatiron School on 5/17/17.
+//  Created by Dennis Vera on 5/19/17.
 //  Copyright © 2017 Dennis Vera. All rights reserved.
 //
 
 import UIKit
 
-class HomeCollectionViewController: UICollectionViewController {
+class ChefDetailCollectionViewController: UICollectionViewController {
     
-    let recipeData = HomeRecipes.loadRecipes()
-
-    let columns: CGFloat = 1.0
+    let chefsData = Chefs.loadChefs()
+    var chef: Chefs?
+    
+    let columns: CGFloat = 2.0
     let inset: CGFloat = 6.0
     let spacing: CGFloat = 4.0
     let lineSpacing: CGFloat = 6.0
@@ -21,48 +22,61 @@ class HomeCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tabBarController?.tabBar.tintColor = UIColor.red
+        navigationBar()
         
-        let layout = collectionViewLayout as! StretchyHeaderLayout
+        let layout = collectionViewLayout as! ChefDetailStretchyHeaderLayout
         layout.maximumStretchHeight = collectionView!.bounds.width
+        
+        // Refresh Control
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(ChefDetailCollectionViewController.refreshControlDidFire), for: .valueChanged)
+        collectionView?.refreshControl = refreshControl
     }
     
-    override var preferredStatusBarStyle : UIStatusBarStyle {
-        return UIStatusBarStyle.lightContent
+    func refreshControlDidFire() {
+        isRandom = true
+        collectionView?.reloadData()
+        collectionView?.refreshControl?.endRefreshing()
     }
-}
-
-// MARK: UICollectionViewDataSource
-
-extension HomeCollectionViewController {
+    
+    func navigationBar() {
+        navigationItem.title = "Chef"
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.red]
+        let attrs = [NSForegroundColorAttributeName: UIColor.red, NSFontAttributeName: UIFont(name: "Helvetica-Bold", size: 24)!]
+        
+        UINavigationBar.appearance().titleTextAttributes = attrs
+    }
+    
+    // MARK: UICollectionViewDataSource
+    
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return recipeData.count
+        return chefsData.count
     }
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as! HomeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChefCell", for: indexPath) as! ChefDetailCollectionViewCell
         
         // Configure the cell
-        let recipe = recipeData[indexPath.item]
-        cell.recipe = recipe
+        let chef = chefsData[indexPath.item]
+        cell.chef = chef
         
         return cell
     }
     
+    
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HomeRecipeHeader", for: indexPath) as! HomeCollectionHeaderView
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ChefHeader", for: indexPath) as! ChefDetailCollectionHeaderView
         
         return header
     }
-    
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
-extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout {
+extension ChefDetailCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = Int((collectionView.frame.width / columns) - (inset + spacing))
@@ -83,6 +97,3 @@ extension HomeCollectionViewController: UICollectionViewDelegateFlowLayout {
     }
     
 }
-
-
-

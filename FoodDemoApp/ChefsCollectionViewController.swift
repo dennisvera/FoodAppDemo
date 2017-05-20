@@ -11,6 +11,7 @@ import UIKit
 class ChefsCollectionViewController: UICollectionViewController {
     
     let chefsData = Chefs.loadChefs()
+    
     let columns: CGFloat = 2.0
     let inset: CGFloat = 6.0
     let spacing: CGFloat = 4.0
@@ -42,8 +43,14 @@ class ChefsCollectionViewController: UICollectionViewController {
         UINavigationBar.appearance().titleTextAttributes = attrs
     }
     
-    // MARK: UICollectionViewDataSource
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ChefMasterToChefDetail" {
+            let detailViewController = segue.destination as! ChefDetailCollectionViewController
+            detailViewController.chef = sender as? Chefs
+        }
+    }
     
+    // MARK: UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -83,7 +90,15 @@ extension ChefsCollectionViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return lineSpacing
     }
-    
 }
+
+// MARK: UICollectionViewDelegate
+extension ChefsCollectionViewController {
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let chef = chefsData[indexPath.item]
+        performSegue(withIdentifier: "ChefMasterToChefDetail", sender: chef)
+    }
+}
+
 
 

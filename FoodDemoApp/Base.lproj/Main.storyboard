@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +22,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="lJr-6j-jpi" kind="relationship" relationship="viewControllers" id="oUo-LX-eob"/>
+                        <segue destination="lJr-6j-jpi" kind="relationship" relationship="viewControllers" id="cDC-Fp-6yF"/>
                         <segue destination="BQd-Sl-IbD" kind="relationship" relationship="viewControllers" id="Fn6-yi-ghW"/>
                         <segue destination="EkP-eM-ibR" kind="relationship" relationship="viewControllers" id="0V2-Ut-bd3"/>
                         <segue destination="5bf-4T-jV8" kind="relationship" relationship="viewControllers" id="smf-oV-w9A"/>
@@ -48,13 +49,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVD-aL-Af2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1351" y="710"/>
+            <point key="canvasLocation" x="1329" y="761"/>
         </scene>
-        <!--Chefs-->
+        <!--ChefCollectionViewController-->
         <scene sceneID="KjL-Z4-UJb">
             <objects>
-                <collectionViewController id="KZt-Kt-AwK" customClass="ChefsCollectionViewController" customModule="FoodDemoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wEv-2U-elt">
+                <collectionViewController title="ChefCollectionViewController" id="KZt-Kt-AwK" customClass="ChefsCollectionViewController" customModule="FoodDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="wEv-2U-elt">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,10 +120,13 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Chefs" image="chefIcon" id="AAq-vX-yvP"/>
                     <navigationItem key="navigationItem" id="JwA-zn-erS"/>
+                    <connections>
+                        <segue destination="Thu-q2-0uV" kind="showDetail" identifier="ChefMasterToChefDetail" id="HCQ-Ez-Oen"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdV-NG-fbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2056.8000000000002" y="710.19490254872574"/>
+            <point key="canvasLocation" x="2121" y="761"/>
         </scene>
         <!--Search-->
         <scene sceneID="CzZ-0B-sU1">
@@ -157,7 +161,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="24S-63-JhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780" y="710"/>
+            <point key="canvasLocation" x="2881" y="-45"/>
         </scene>
         <!--My Stuff-->
         <scene sceneID="5Nn-ya-RyR">
@@ -192,7 +196,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CGw-CY-BYN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3506" y="356"/>
+            <point key="canvasLocation" x="3753" y="356"/>
         </scene>
         <!--Home-->
         <scene sceneID="chE-V7-21K">
@@ -210,7 +214,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeCell" id="bhK-a2-9U1" customClass="HomeCollectionViewCell" customModule="FoodDemoApp" customModuleProvider="target">
-                                <rect key="frame" x="1" y="180" width="374" height="292"/>
+                                <rect key="frame" x="0.5" y="180" width="374" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="292"/>
@@ -262,42 +266,45 @@
                                 </constraints>
                                 <size key="customSize" width="374" height="292"/>
                                 <connections>
-                                    <outlet property="chefImage" destination="HWy-dN-hcw" id="fMb-e0-2xy"/>
-                                    <outlet property="dishImageView" destination="cFg-Io-pJe" id="aDB-9x-2j9"/>
-                                    <outlet property="recipeTitleLabel" destination="DcR-DB-93w" id="p7p-qk-fo4"/>
+                                    <outlet property="chefImage" destination="HWy-dN-hcw" id="1DP-8A-KC5"/>
+                                    <outlet property="dishImageView" destination="cFg-Io-pJe" id="hWV-3R-peS"/>
+                                    <outlet property="recipeTitleLabel" destination="DcR-DB-93w" id="SFg-6x-AO8"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
-                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeHeader" id="yLH-un-6Ze" customClass="HomeCollectionHeaderView" customModule="FoodDemoApp" customModuleProvider="target">
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeRecipeHeader" id="yLH-un-6Ze" customClass="HomeCollectionHeaderView" customModule="FoodDemoApp" customModuleProvider="target">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                             <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="HeaderBackgroundImage" translatesAutoresizingMaskIntoConstraints="NO" id="gge-UT-Aep">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="180" id="hbv-4a-JPS"/>
-                                        <constraint firstAttribute="width" secondItem="gge-UT-Aep" secondAttribute="height" multiplier="25:12" id="xWM-cr-hp7"/>
+                                        <constraint firstAttribute="height" constant="180" id="bR1-IH-es6"/>
                                     </constraints>
                                 </imageView>
                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foodNetworkImage" translatesAutoresizingMaskIntoConstraints="NO" id="OIy-Oo-CIT">
                                     <rect key="frame" x="147.5" y="50" width="80" height="80"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" secondItem="OIy-Oo-CIT" secondAttribute="height" multiplier="1:1" id="jZp-xs-Gdz"/>
-                                        <constraint firstAttribute="height" constant="80" id="m00-Gn-0nU"/>
+                                        <constraint firstAttribute="width" secondItem="OIy-Oo-CIT" secondAttribute="height" multiplier="1:1" id="7xP-rd-IMg"/>
+                                        <constraint firstAttribute="height" constant="80" id="lwR-hX-ocb"/>
                                     </constraints>
                                 </imageView>
                             </subviews>
                             <constraints>
-                                <constraint firstItem="gge-UT-Aep" firstAttribute="centerY" secondItem="yLH-un-6Ze" secondAttribute="centerY" id="5ym-go-0UR"/>
-                                <constraint firstItem="OIy-Oo-CIT" firstAttribute="centerX" secondItem="yLH-un-6Ze" secondAttribute="centerX" id="Es6-S0-tIi"/>
-                                <constraint firstItem="gge-UT-Aep" firstAttribute="centerX" secondItem="yLH-un-6Ze" secondAttribute="centerX" id="Q5W-xN-zHl"/>
-                                <constraint firstItem="OIy-Oo-CIT" firstAttribute="centerY" secondItem="yLH-un-6Ze" secondAttribute="centerY" id="QJn-Qw-cve"/>
+                                <constraint firstItem="OIy-Oo-CIT" firstAttribute="centerX" secondItem="yLH-un-6Ze" secondAttribute="centerX" id="8HT-56-tjf"/>
+                                <constraint firstAttribute="trailing" secondItem="gge-UT-Aep" secondAttribute="trailing" id="9rj-tO-juI"/>
+                                <constraint firstItem="gge-UT-Aep" firstAttribute="centerY" secondItem="yLH-un-6Ze" secondAttribute="centerY" id="Ctk-tW-lLS"/>
+                                <constraint firstItem="gge-UT-Aep" firstAttribute="top" secondItem="yLH-un-6Ze" secondAttribute="top" id="F10-Jf-etd"/>
+                                <constraint firstAttribute="bottom" secondItem="gge-UT-Aep" secondAttribute="bottom" id="I67-Ru-0Je"/>
+                                <constraint firstItem="gge-UT-Aep" firstAttribute="leading" secondItem="yLH-un-6Ze" secondAttribute="leading" id="c9A-qL-hMI"/>
+                                <constraint firstItem="gge-UT-Aep" firstAttribute="centerX" secondItem="yLH-un-6Ze" secondAttribute="centerX" id="iux-4a-fCn"/>
+                                <constraint firstItem="OIy-Oo-CIT" firstAttribute="centerY" secondItem="yLH-un-6Ze" secondAttribute="centerY" id="l1A-A0-FFt"/>
                             </constraints>
                             <connections>
                                 <outlet property="backgroundImage" destination="gge-UT-Aep" id="dnV-A0-0ho"/>
-                                <outlet property="backgroundImageHeightConstraint" destination="hbv-4a-JPS" id="43I-ob-fGs"/>
+                                <outlet property="backgroundImageHeightConstraint" destination="bR1-IH-es6" id="Pez-KW-ct7"/>
                                 <outlet property="foregroundImage" destination="OIy-Oo-CIT" id="yVE-Cf-Q8v"/>
-                                <outlet property="foregroundImageHeightConstraint" destination="m00-Gn-0nU" id="moP-dt-mG9"/>
+                                <outlet property="foregroundImageHeightConstraint" destination="lwR-hX-ocb" id="M7T-ta-OSO"/>
                             </connections>
                         </collectionReusableView>
                         <connections>
@@ -310,7 +317,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8tC-Zc-2Wy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2056.8000000000002" y="5.8470764617691158"/>
+            <point key="canvasLocation" x="1329" y="-45"/>
         </scene>
         <!--Shows-->
         <scene sceneID="z3x-Va-fFs">
@@ -346,11 +353,119 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qON-oi-PPN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2780" y="6"/>
+            <point key="canvasLocation" x="2121" y="-44"/>
+        </scene>
+        <!--ChefDetailViewController-->
+        <scene sceneID="xoc-HH-ObO">
+            <objects>
+                <collectionViewController title="ChefDetailViewController" id="Thu-q2-0uV" customClass="ChefDetailCollectionViewController" customModule="FoodDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Uyv-Xd-Ww9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Sp5-RX-SLR" customClass="ChefDetailStretchyHeaderLayout" customModule="FoodDemoApp" customModuleProvider="target">
+                            <size key="itemSize" width="200" height="200"/>
+                            <size key="headerReferenceSize" width="50" height="200"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefCell" id="nDY-aG-6YS" customClass="ChefDetailCollectionViewCell" customModule="FoodDemoApp" customModuleProvider="target">
+                                <rect key="frame" x="87.5" y="200" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDC-mi-02s">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ufr-Tl-UlD" userLabel="chefHeadshot">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="ZuB-YC-SOA"/>
+                                                        <constraint firstAttribute="width" constant="200" id="kpz-L3-jZt"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Recipe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0Q-Mi-TK9" userLabel="chefName">
+                                                    <rect key="frame" x="20" y="136" width="160" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="V0Q-Mi-TK9" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" constant="20" id="0Hi-Ni-D2O"/>
+                                                <constraint firstItem="Ufr-Tl-UlD" firstAttribute="trailing" secondItem="NDC-mi-02s" secondAttribute="trailing" id="6XE-gd-54E"/>
+                                                <constraint firstItem="Ufr-Tl-UlD" firstAttribute="top" secondItem="NDC-mi-02s" secondAttribute="top" id="Qdv-IJ-Z8c"/>
+                                                <constraint firstItem="V0Q-Mi-TK9" firstAttribute="trailing" secondItem="NDC-mi-02s" secondAttribute="trailing" constant="-20" id="RMi-uM-QSI"/>
+                                                <constraint firstItem="Ufr-Tl-UlD" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" id="Ynl-xl-tKi"/>
+                                                <constraint firstItem="V0Q-Mi-TK9" firstAttribute="top" secondItem="Ufr-Tl-UlD" secondAttribute="bottom" constant="16" id="mGb-Xl-1AI"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="NDC-mi-02s" firstAttribute="top" secondItem="nDY-aG-6YS" secondAttribute="top" id="Pfv-zE-nmg"/>
+                                    <constraint firstItem="NDC-mi-02s" firstAttribute="bottom" secondItem="nDY-aG-6YS" secondAttribute="bottom" id="aIw-JS-F41"/>
+                                    <constraint firstItem="NDC-mi-02s" firstAttribute="trailing" secondItem="nDY-aG-6YS" secondAttribute="trailing" id="eKE-Pg-Rq6"/>
+                                    <constraint firstItem="NDC-mi-02s" firstAttribute="leading" secondItem="nDY-aG-6YS" secondAttribute="leading" id="vl3-x9-P2q"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dishNameLabel" destination="V0Q-Mi-TK9" id="ep0-PT-3lF"/>
+                                    <outlet property="dishRecipeImage" destination="Ufr-Tl-UlD" id="jqW-Df-D9x"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefHeader" id="OWU-kM-fIo" customClass="ChefDetailCollectionHeaderView" customModule="FoodDemoApp" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Katie Lee" translatesAutoresizingMaskIntoConstraints="NO" id="GRy-eE-0Kr">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="aY6-7t-734"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5og-xh-hQp">
+                                    <rect key="frame" x="28" y="161" width="319" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="5og-xh-hQp" firstAttribute="leading" secondItem="OWU-kM-fIo" secondAttribute="leadingMargin" constant="20" id="3xV-PL-6Ol"/>
+                                <constraint firstAttribute="trailingMargin" secondItem="5og-xh-hQp" secondAttribute="trailing" constant="20" id="4l3-pd-bxO"/>
+                                <constraint firstItem="GRy-eE-0Kr" firstAttribute="leading" secondItem="OWU-kM-fIo" secondAttribute="leading" id="APC-Tb-vZZ"/>
+                                <constraint firstAttribute="bottom" secondItem="GRy-eE-0Kr" secondAttribute="bottom" id="KSf-2Y-GNW"/>
+                                <constraint firstAttribute="trailing" secondItem="GRy-eE-0Kr" secondAttribute="trailing" id="cbj-KF-KxX"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="5og-xh-hQp" secondAttribute="bottom" constant="10" id="dYT-NT-Xyu"/>
+                                <constraint firstItem="GRy-eE-0Kr" firstAttribute="top" secondItem="OWU-kM-fIo" secondAttribute="top" id="jER-ed-S53"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="chefBackgroundImage" destination="GRy-eE-0Kr" id="sNX-6m-mzF"/>
+                                <outlet property="chefBackgroundImageHeightConstraint" destination="aY6-7t-734" id="k5s-pW-TNx"/>
+                                <outlet property="chefNameLabel" destination="5og-xh-hQp" id="eAd-9b-De1"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="Thu-q2-0uV" id="sgR-V5-mSi"/>
+                            <outlet property="delegate" destination="Thu-q2-0uV" id="A65-MF-L85"/>
+                        </connections>
+                    </collectionView>
+                    <tabBarItem key="tabBarItem" title="Chefs" image="chefIcon" id="rOS-zi-fGu"/>
+                    <navigationItem key="navigationItem" id="DA2-Md-dHf"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Vc-lH-smC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2881" y="761"/>
         </scene>
     </scenes>
     <resources>
         <image name="HeaderBackgroundImage" width="1200" height="1200"/>
+        <image name="Katie Lee" width="175" height="228"/>
         <image name="chefIcon" width="30" height="31"/>
         <image name="foodNetworkImage" width="234" height="234"/>
         <image name="homeIcon" width="39" height="30"/>
