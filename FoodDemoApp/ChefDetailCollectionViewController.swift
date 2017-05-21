@@ -22,7 +22,7 @@ class ChefDetailCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationBar()
+//        navigationBar()
         
         let layout = collectionViewLayout as! ChefDetailStretchyHeaderLayout
         layout.maximumStretchHeight = collectionView!.bounds.width

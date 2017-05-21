@@ -14,9 +14,8 @@ class ChefDetailCollectionViewCell: UICollectionViewCell {
     
     var chef: Chefs? {
         didSet {
-            
             if let theRecipe = chef {
-                dishRecipeImage.image = UIImage(named: theRecipe.name)
+                dishRecipeImage.image = UIImage(named: theRecipe.recipeImage)
                 dishNameLabel.text = theRecipe.recipe
             }
         }

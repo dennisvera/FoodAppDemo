@@ -55,7 +55,7 @@
         <scene sceneID="KjL-Z4-UJb">
             <objects>
                 <collectionViewController title="ChefCollectionViewController" id="KZt-Kt-AwK" customClass="ChefsCollectionViewController" customModule="FoodDemoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="wEv-2U-elt">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="wEv-2U-elt">
                         <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -217,7 +217,7 @@
                                 <rect key="frame" x="0.5" y="180" width="374" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="292"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhA-XQ-yH2">
@@ -374,7 +374,7 @@
                                 <rect key="frame" x="87.5" y="200" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="201" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDC-mi-02s">
@@ -388,7 +388,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Recipe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0Q-Mi-TK9" userLabel="chefName">
-                                                    <rect key="frame" x="20" y="136" width="160" height="17"/>
+                                                    <rect key="frame" x="15" y="136" width="170" height="17"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -396,10 +396,10 @@
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstItem="V0Q-Mi-TK9" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" constant="20" id="0Hi-Ni-D2O"/>
+                                                <constraint firstItem="V0Q-Mi-TK9" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" constant="15" id="0Hi-Ni-D2O"/>
                                                 <constraint firstItem="Ufr-Tl-UlD" firstAttribute="trailing" secondItem="NDC-mi-02s" secondAttribute="trailing" id="6XE-gd-54E"/>
                                                 <constraint firstItem="Ufr-Tl-UlD" firstAttribute="top" secondItem="NDC-mi-02s" secondAttribute="top" id="Qdv-IJ-Z8c"/>
-                                                <constraint firstItem="V0Q-Mi-TK9" firstAttribute="trailing" secondItem="NDC-mi-02s" secondAttribute="trailing" constant="-20" id="RMi-uM-QSI"/>
+                                                <constraint firstItem="V0Q-Mi-TK9" firstAttribute="trailing" secondItem="NDC-mi-02s" secondAttribute="trailing" constant="-15" id="RMi-uM-QSI"/>
                                                 <constraint firstItem="Ufr-Tl-UlD" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" id="Ynl-xl-tKi"/>
                                                 <constraint firstItem="V0Q-Mi-TK9" firstAttribute="top" secondItem="Ufr-Tl-UlD" secondAttribute="bottom" constant="16" id="mGb-Xl-1AI"/>
                                             </constraints>
@@ -429,8 +429,8 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5og-xh-hQp">
-                                    <rect key="frame" x="28" y="161" width="319" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <rect key="frame" x="28" y="160.5" width="319" height="21.5"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
