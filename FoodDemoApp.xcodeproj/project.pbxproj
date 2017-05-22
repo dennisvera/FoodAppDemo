@@ -195,7 +195,7 @@
 				TargetAttributes = {
 					E164B2ED1EC8BA6000EB20E4 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = B426D3XC5Q;
+						DevelopmentTeam = K24N6NL7FA;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -422,7 +422,7 @@
 			baseConfigurationReference = B5A65C05EBBC35E5F13DB716 /* Pods-FoodDemoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B426D3XC5Q;
+				DEVELOPMENT_TEAM = K24N6NL7FA;
 				INFOPLIST_FILE = FoodDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -437,7 +437,7 @@
 			baseConfigurationReference = 037853767A7701A63AD27DFB /* Pods-FoodDemoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = B426D3XC5Q;
+				DEVELOPMENT_TEAM = K24N6NL7FA;
 				INFOPLIST_FILE = FoodDemoApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
