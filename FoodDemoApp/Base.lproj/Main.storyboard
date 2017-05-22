@@ -70,7 +70,7 @@
                                 <rect key="frame" x="87.5" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="201" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zYr-5R-OLD">
@@ -217,7 +217,7 @@
                                 <rect key="frame" x="0.5" y="180" width="374" height="292"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="292"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="292"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhA-XQ-yH2">
@@ -371,10 +371,10 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefCell" id="nDY-aG-6YS" customClass="ChefDetailCollectionViewCell" customModule="FoodDemoApp" customModuleProvider="target">
-                                <rect key="frame" x="87.5" y="200" width="200" height="200"/>
+                                <rect key="frame" x="88" y="200" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="201" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NDC-mi-02s">
@@ -388,20 +388,39 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chef Recipe" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V0Q-Mi-TK9" userLabel="chefName">
-                                                    <rect key="frame" x="15" y="136" width="170" height="17"/>
+                                                    <rect key="frame" x="15" y="136" width="170" height="21"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
                                                     <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5Stars" translatesAutoresizingMaskIntoConstraints="NO" id="T0A-s4-7q7">
+                                                    <rect key="frame" x="55" y="172" width="90" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="oC5-hm-Sb3"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoW-bH-q3d">
+                                                    <rect key="frame" x="149" y="172" width="15.5" height="14"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
+                                                <constraint firstItem="T0A-s4-7q7" firstAttribute="top" secondItem="V0Q-Mi-TK9" secondAttribute="bottom" constant="15" id="0Df-2u-ooS"/>
                                                 <constraint firstItem="V0Q-Mi-TK9" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" constant="15" id="0Hi-Ni-D2O"/>
                                                 <constraint firstItem="Ufr-Tl-UlD" firstAttribute="trailing" secondItem="NDC-mi-02s" secondAttribute="trailing" id="6XE-gd-54E"/>
+                                                <constraint firstItem="QoW-bH-q3d" firstAttribute="leading" secondItem="T0A-s4-7q7" secondAttribute="trailing" constant="4" id="8or-p7-Byt"/>
+                                                <constraint firstAttribute="trailing" secondItem="QoW-bH-q3d" secondAttribute="trailing" constant="35.5" id="La2-n0-vSu"/>
+                                                <constraint firstAttribute="bottom" secondItem="T0A-s4-7q7" secondAttribute="bottom" constant="14" id="NR3-7N-YPU"/>
                                                 <constraint firstItem="Ufr-Tl-UlD" firstAttribute="top" secondItem="NDC-mi-02s" secondAttribute="top" id="Qdv-IJ-Z8c"/>
                                                 <constraint firstItem="V0Q-Mi-TK9" firstAttribute="trailing" secondItem="NDC-mi-02s" secondAttribute="trailing" constant="-15" id="RMi-uM-QSI"/>
                                                 <constraint firstItem="Ufr-Tl-UlD" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" id="Ynl-xl-tKi"/>
+                                                <constraint firstItem="T0A-s4-7q7" firstAttribute="leading" secondItem="NDC-mi-02s" secondAttribute="leading" constant="55" id="iCx-SY-2no"/>
                                                 <constraint firstItem="V0Q-Mi-TK9" firstAttribute="top" secondItem="Ufr-Tl-UlD" secondAttribute="bottom" constant="16" id="mGb-Xl-1AI"/>
+                                                <constraint firstAttribute="bottom" secondItem="QoW-bH-q3d" secondAttribute="bottom" constant="14" id="uQY-TT-hHF"/>
+                                                <constraint firstItem="QoW-bH-q3d" firstAttribute="top" secondItem="V0Q-Mi-TK9" secondAttribute="bottom" constant="15" id="xtU-du-7t5"/>
                                             </constraints>
                                         </view>
                                     </subviews>
@@ -429,7 +448,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amanda Freitag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5og-xh-hQp">
-                                    <rect key="frame" x="28" y="143" width="319" height="29"/>
+                                    <rect key="frame" x="28" y="138" width="319" height="29"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <nil key="highlightedColor"/>
@@ -446,6 +465,12 @@
                                         <segue destination="KZt-Kt-AwK" kind="show" identifier="chefSegue" id="NfI-2x-nvg"/>
                                     </connections>
                                 </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="90 Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VPe-AF-zPq">
+                                    <rect key="frame" x="145" y="171" width="85" height="14"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="eM5-Ms-3HI" firstAttribute="leading" secondItem="OWU-kM-fIo" secondAttribute="leadingMargin" constant="20" id="3XY-oD-aHV"/>
@@ -454,9 +479,13 @@
                                 <constraint firstItem="GRy-eE-0Kr" firstAttribute="leading" secondItem="OWU-kM-fIo" secondAttribute="leading" id="APC-Tb-vZZ"/>
                                 <constraint firstAttribute="trailingMargin" secondItem="eM5-Ms-3HI" secondAttribute="trailing" constant="309" id="Jbs-po-7Fq"/>
                                 <constraint firstAttribute="bottom" secondItem="GRy-eE-0Kr" secondAttribute="bottom" id="KSf-2Y-GNW"/>
+                                <constraint firstItem="VPe-AF-zPq" firstAttribute="leading" secondItem="OWU-kM-fIo" secondAttribute="leading" constant="145" id="Mlr-2e-0xb"/>
+                                <constraint firstAttribute="trailing" secondItem="VPe-AF-zPq" secondAttribute="trailing" constant="145" id="PbL-ge-l77"/>
+                                <constraint firstItem="VPe-AF-zPq" firstAttribute="top" secondItem="5og-xh-hQp" secondAttribute="bottom" constant="4" id="WIr-4b-3AD"/>
                                 <constraint firstAttribute="trailing" secondItem="GRy-eE-0Kr" secondAttribute="trailing" id="cbj-KF-KxX"/>
-                                <constraint firstAttribute="bottomMargin" secondItem="5og-xh-hQp" secondAttribute="bottom" constant="20" id="dYT-NT-Xyu"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="5og-xh-hQp" secondAttribute="bottom" constant="25" id="dYT-NT-Xyu"/>
                                 <constraint firstItem="GRy-eE-0Kr" firstAttribute="top" secondItem="OWU-kM-fIo" secondAttribute="top" id="jER-ed-S53"/>
+                                <constraint firstAttribute="bottom" secondItem="VPe-AF-zPq" secondAttribute="bottom" constant="15" id="nAe-07-Qsr"/>
                                 <constraint firstItem="eM5-Ms-3HI" firstAttribute="top" secondItem="OWU-kM-fIo" secondAttribute="topMargin" constant="25" id="zYw-QT-oHx"/>
                             </constraints>
                             <connections>
@@ -475,10 +504,11 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Vc-lH-smC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2881" y="761"/>
+            <point key="canvasLocation" x="2880.8000000000002" y="760.56971514242889"/>
         </scene>
     </scenes>
     <resources>
+        <image name="5Stars" width="90" height="16"/>
         <image name="AmandaFreitagChefDetail" width="1280" height="960"/>
         <image name="HeaderBackgroundImage" width="1200" height="1200"/>
         <image name="backArrow" width="40" height="40"/>
