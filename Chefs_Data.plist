@@ -8,9 +8,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Argentinian Steak with Parsley Sauce</string>
+		<string>Roasted Whole Mackerel </string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>roastedMackerel</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -28,9 +28,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Fireworks Red, White and Blue Daiquiris</string>
+		<string>Cast Iron Skillet Corn Bread </string>
 		<key>recipeImage</key>
-		<string>daiquiries</string>
+		<string>skilletCornbread</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -38,9 +38,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Fireworks Red, White and Blue Daiquiris</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>daiquiries</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -48,7 +48,7 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Argentinian Steak with Parsley Sauce</string>
 		<key>recipeImage</key>
 		<string>argentinianSteak</string>
 	</dict>
@@ -58,9 +58,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Grilled Romaine Salad with Blue Cheese</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>romaineBlueCheese</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -68,9 +68,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Creme Brulee</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>cremeBrulee</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -78,9 +78,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Broiled Sockeye Salmon with Citrus Glaze</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>sockeyeSalmon</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -88,9 +88,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Creole Pinto Beans</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>creolePintoBeans</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -98,9 +98,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Safflower Madeleines</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>safflowerMadeline</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -108,9 +108,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Roasted Garlic Bean Dip</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>garlicBeanDip</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -118,9 +118,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Lentil and Orzo Salad with Roasted Cauliflower</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>lentilOrzo</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -128,9 +128,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Savory Curry Granola with Coconut Oil, Nuts and Seeds</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>granola</string>
 	</dict>
 	<dict>
 		<key>name</key>
@@ -138,9 +138,9 @@
 		<key>title</key>
 		<string>Chef</string>
 		<key>recipe</key>
-		<string>Mocha Brownie Ice Cream Sandwiches</string>
+		<string>Eddie Jackson&apos;s Kicked-Up Guac</string>
 		<key>recipeImage</key>
-		<string>argentinianSteak</string>
+		<string>eddieGuac</string>
 	</dict>
 </array>
 </plist>

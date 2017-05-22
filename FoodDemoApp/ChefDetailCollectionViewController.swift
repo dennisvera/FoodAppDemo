@@ -22,8 +22,6 @@ class ChefDetailCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        navigationBar()
-        
         let layout = collectionViewLayout as! ChefDetailStretchyHeaderLayout
         layout.maximumStretchHeight = collectionView!.bounds.width
         
@@ -39,40 +37,37 @@ class ChefDetailCollectionViewController: UICollectionViewController {
         collectionView?.refreshControl?.endRefreshing()
     }
     
-    func navigationBar() {
-        navigationItem.title = "Chef"
-        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.red]
-        let attrs = [NSForegroundColorAttributeName: UIColor.red, NSFontAttributeName: UIFont(name: "Helvetica-Bold", size: 24)!]
-        
-        UINavigationBar.appearance().titleTextAttributes = attrs
+    @IBAction func backButtonPressed(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "chefSegue", sender: sender)
     }
+
+
+// MARK: UICollectionViewDataSource
+
+override func numberOfSections(in collectionView: UICollectionView) -> Int {
+    return 1
+}
+
+override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return chefsData.count
+}
+
+override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChefCell", for: indexPath) as! ChefDetailCollectionViewCell
     
-    // MARK: UICollectionViewDataSource
+    // Configure the cell
+    let chef = chefsData[indexPath.item]
+    cell.chef = chef
     
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
+    return cell
+}
+
+
+override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+    let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ChefHeader", for: indexPath) as! ChefDetailCollectionHeaderView
     
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return chefsData.count
-    }
-    
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChefCell", for: indexPath) as! ChefDetailCollectionViewCell
-        
-        // Configure the cell
-        let chef = chefsData[indexPath.item]
-        cell.chef = chef
-        
-        return cell
-    }
-    
-    
-    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ChefHeader", for: indexPath) as! ChefDetailCollectionHeaderView
-        
-        return header
-    }
+    return header
+}
 }
 
 // MARK: UICollectionViewDelegateFlowLayout
