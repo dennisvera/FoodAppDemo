@@ -18,6 +18,8 @@ class ChefDetailCollectionHeaderView: UICollectionReusableView {
         didSet {
             if let theRecipe = chef {
                 //                dishRecipeImage.image = UIImage(named: theRecipe.recipeImage)
+                
+                
                 chefNameLabel.text = theRecipe.name
             }
         }

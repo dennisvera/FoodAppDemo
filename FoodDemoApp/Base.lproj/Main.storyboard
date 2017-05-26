@@ -23,7 +23,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="lJr-6j-jpi" kind="relationship" relationship="viewControllers" id="cDC-Fp-6yF"/>
-                        <segue destination="BQd-Sl-IbD" kind="relationship" relationship="viewControllers" id="Fn6-yi-ghW"/>
+                        <segue destination="BQd-Sl-IbD" kind="relationship" relationship="viewControllers" id="LnQ-Zi-in9"/>
                         <segue destination="EkP-eM-ibR" kind="relationship" relationship="viewControllers" id="0V2-Ut-bd3"/>
                         <segue destination="5bf-4T-jV8" kind="relationship" relationship="viewControllers" id="smf-oV-w9A"/>
                         <segue destination="DZo-SV-Vs3" kind="relationship" relationship="viewControllers" id="eu7-n7-SCN"/>
@@ -44,7 +44,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="KZt-Kt-AwK" kind="relationship" relationship="rootViewController" id="pkM-uy-4w2"/>
+                        <segue destination="KZt-Kt-AwK" kind="relationship" relationship="rootViewController" id="toR-CG-uIJ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XVD-aL-Af2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,8 +120,9 @@
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Chefs" image="chefIcon" id="AAq-vX-yvP"/>
                     <navigationItem key="navigationItem" id="JwA-zn-erS"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <segue destination="Thu-q2-0uV" kind="showDetail" identifier="ChefMasterToChefDetail" id="HCQ-Ez-Oen"/>
+                        <segue destination="Thu-q2-0uV" kind="show" identifier="chefDetailSegue" action="showDetailViewController:sender:" id="HCQ-Ez-Oen"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdV-NG-fbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -359,7 +360,7 @@
         <scene sceneID="xoc-HH-ObO">
             <objects>
                 <collectionViewController title="ChefDetailViewController" id="Thu-q2-0uV" customClass="ChefDetailCollectionViewController" customModule="FoodDemoApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Uyv-Xd-Ww9">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Uyv-Xd-Ww9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -371,7 +372,7 @@
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChefCell" id="nDY-aG-6YS" customClass="ChefDetailCollectionViewCell" customModule="FoodDemoApp" customModuleProvider="target">
-                                <rect key="frame" x="88" y="200" width="200" height="200"/>
+                                <rect key="frame" x="87.5" y="200" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>

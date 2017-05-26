@@ -44,7 +44,7 @@ class ChefsCollectionViewController: UICollectionViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ChefMasterToChefDetail" {
+        if segue.identifier == "chefDetailSegue" {
             let detailViewController = segue.destination as! ChefDetailCollectionViewController
             detailViewController.chef = sender as? Chefs
         }
@@ -96,7 +96,7 @@ extension ChefsCollectionViewController: UICollectionViewDelegateFlowLayout {
 extension ChefsCollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let chef = chefsData[indexPath.item]
-        performSegue(withIdentifier: "ChefMasterToChefDetail", sender: chef)
+        performSegue(withIdentifier: "chefDetailSegue", sender: chef)
     }
 }
 
